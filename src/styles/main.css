@@ -1,0 +1,6569 @@
+@charset "UTF-8";.btn,body {
+    -webkit-user-select: none
+}
+
+a:active,a:hover,body {
+    outline: 0
+}
+
+*,:after,:before {
+    box-sizing: border-box
+}
+
+img,legend {
+    border: 0
+}
+
+.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-7,.col-8,.col-9 {
+    position: relative;
+    min-height: 1px
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #f7f7f7;
+    padding-bottom: 1.53rem;
+    margin: 0;
+    color: #333
+}
+
+body.fixed {
+    padding-top: 1.2rem
+}
+
+legend,td,th {
+    padding: 0
+}
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+    display: block
+}
+
+audio,canvas,progress,video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],template {
+    display: none
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,optgroup,strong {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+pre,textarea {
+    overflow: auto
+}
+
+code,kbd,pre,samp {
+    font-family: monospace,monospace;
+    font-size: 1em
+}
+
+button,input,optgroup,select,textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,select {
+    text-transform: none
+}
+
+button,html input[type=button],input[type=reset],input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],html input[disabled] {
+    cursor: default
+}
+
+.btn,.nav .btn-nav {
+    cursor: pointer;
+    outline: 0
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type=checkbox],input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.text-small {
+    font-size: .32rem;
+    color: #999;
+    line-height: .34667rem
+}
+
+a,a:focus,a:hover {
+    color: #006ac7
+}
+
+.text-strong {
+    font-weight: 700
+}
+
+.pull-right {
+    float: right
+}
+
+.btn-bottom .cal,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-8,.col-9,.dialog .btn-dialog,.input-group .form-control,.pull-left {
+    float: left
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-left {
+    text-align: left
+}
+
+.btn,.btn-bottom .text,.nav .btn-nav,.nav .nav-title {
+    text-align: center
+}
+
+.no-border-top {
+    border-top: none!important
+}
+
+.no-border-bottom {
+    border-bottom: none!important
+}
+
+@supports (bottom: constant(safe-area-inset-bottom)) {
+    body {
+        safe-area-inset-bottom:.586667rem;
+        safe-area-inset-top: 1.173333rem;
+        padding-bottom: calc(1.3067rem + constant(safe-area-inset-bottom))!important
+    }
+
+    .btn-bottom,.store-detail-form {
+        bottom: constant(safe-area-inset-bottom)!important
+    }
+}
+
+@supports (bottom: env(safe-area-inset-bottom)) {
+    body {
+        safe-area-inset-bottom:.586667rem;
+        safe-area-inset-top: 1.173333rem;
+        padding-bottom: calc(1.3067rem + env(safe-area-inset-bottom))!important
+    }
+
+    .btn-bottom,.store-detail-form {
+        bottom: env(safe-area-inset-bottom)!important
+    }
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.col-1 {
+    width: 8.33333%
+}
+
+.col-2 {
+    width: 16.66667%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.33333%
+}
+
+.col-5 {
+    width: 41.66667%
+}
+
+.col-6 {
+    position: relative;
+    min-height: 1px;
+    width: 50%
+}
+
+.col-7 {
+    float: left;
+    width: 58.33333%
+}
+
+.col-8 {
+    width: 66.66667%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.33333%
+}
+
+.col-11 {
+    width: 91.66667%
+}
+
+.col-12 {
+    width: 100%
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none
+}
+
+.btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 .4rem
+}
+
+.btn-box .btn:not(:last-child) {
+    margin-right: .26667rem
+}
+
+.btn {
+    display: inline-block;
+    padding: .26667rem 0;
+    margin: .4rem 0 0;
+    font-size: .53333rem;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: .16rem;
+    -webkit-transition: background-color .3s ease-out,border-color .3s ease-out;
+    transition: background-color .3s ease-out,border-color .3s ease-out;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    line-height: 1
+}
+
+.btn.btn-default {
+    color: #fff;
+    background-color: #53a0e3
+}
+
+.btn.btn-default:active {
+    background-color: #3e8acd
+}
+
+.btn.btn-default.btn-disabled {
+    background-color: #b7d7f3
+}
+
+.btn.btn-second {
+    color: #53a0e3;
+    background-color: #fff;
+    border: 1px solid #53a0e3
+}
+
+.btn.btn-second:active {
+    background-color: #edf5fc
+}
+
+.btn.btn-second.btn-disabled {
+    background-color: #ececec;
+    color: #c2c2c2;
+    border: 1px solid transparent
+}
+
+.btn.btn-third {
+    color: #333;
+    background-color: #f7f7f7;
+    border: 1px solid #dedede
+}
+
+.btn.btn-third:active {
+    background-color: #cdcdcd
+}
+
+.btn.btn-third.btn-disabled {
+    background-color: #dedede;
+    color: #c2c2c2
+}
+
+.btn.btn-simple {
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #dedede
+}
+
+.btn.btn-simple:active {
+    background-color: #cdcdcd
+}
+
+.btn-bottom,.btn-bottom .text {
+    background-color: #53a0e3;
+    height: 1.53rem
+}
+
+.btn.btn-simple.btn-disabled {
+    color: #c2c2c2
+}
+
+.btn.btn-block {
+    display: block;
+    width: 100%
+}
+
+.btn-xs {
+    padding: .26667rem;
+    margin: 0;
+    font-size: .4rem
+}
+
+.btn-bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0
+}
+
+.btn-bottom .text {
+    color: #fff;
+    font-size: .53333rem;
+    line-height: 1.53rem;
+    -webkit-transition: background-color .3s ease-out,border-color .3s ease-out;
+    transition: background-color .3s ease-out,border-color .3s ease-out
+}
+
+.btn-bottom .text:active {
+    background-color: #3e8acd
+}
+
+.btn-bottom .text.muilt-line {
+    line-height: .5rem;
+    padding-top: .26667rem
+}
+
+.btn-bottom .text.border-left {
+    border-left: 1px #84c1ee solid
+}
+
+.btn-bottom .text span {
+    font-size: .32rem
+}
+
+.btn-bottom .cal {
+    background: url(https://static.souyidai.com/wap/2.0/images/calculator_n@2x.png) center center no-repeat;
+    background-size: 100% auto;
+    width: 1.53rem;
+    height: 1.53rem;
+    display: none;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease
+}
+
+.btn-bottom .cal:active {
+    background: url(https://static.souyidai.com/wap/2.0/images/calculator_o@2x.png) center center no-repeat;
+    background-size: 100% auto
+}
+
+.nav {
+    height: 1.28rem;
+    background-color: #53a0e3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 .4rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 10
+}
+
+.nav.nav-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0
+}
+
+.nav.nav-gradient {
+    background-image: -webkit-linear-gradient(bottom,#2f488f,#314990);
+    background-image: linear-gradient(0deg,#2f488f,#314990)
+}
+
+.nav.nav-gradient .nav-left-text {
+    padding-left: .26667rem
+}
+
+.nav .icon-back {
+    width: .66667rem;
+    height: .66667rem;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/back@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block
+}
+
+.nav .icon-help,.nav .icon-menu {
+    width: .53333rem;
+    height: .53333rem;
+    background-size: contain;
+    background-position: right;
+    display: block;
+    background-repeat: no-repeat
+}
+
+.nav .icon-menu {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/menu.png)
+}
+
+.nav .icon-help {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help.png)
+}
+
+.nav .nav-title {
+    color: #fff;
+    font-size: .48rem;
+    line-height: 1;
+    margin: 0
+}
+
+.nav .nav-title span {
+    font-size: .32rem
+}
+
+.nav .nav-left,.nav .nav-right {
+    min-width: .8rem
+}
+
+.nav a {
+    font-size: .4rem;
+    color: #fff
+}
+
+.nav a:active,.nav a:hover {
+    color: #fff
+}
+
+.nav .btn-nav {
+    background-color: #fff;
+    color: #53a0e3;
+    padding: .13333rem .4rem;
+    border-radius: .16rem;
+    border: none;
+    font-size: .4rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color .3s ease-out,border-color .3s ease-out;
+    transition: background-color .3s ease-out,border-color .3s ease-out;
+    line-height: 1
+}
+
+.nav .btn-nav.btn-disabled {
+    background-color: #b7d7f3
+}
+
+.nav .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1.2rem;
+    right: .3rem;
+    border-radius: .16rem;
+    background-color: rgba(0,0,0,.8);
+    opacity: 1
+}
+
+.nav .nav-menu .nav-menu-triangle {
+    position: absolute;
+    top: -.2rem;
+    right: .25rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 .2rem .2rem;
+    border-color: transparent transparent rgba(0,0,0,.8)
+}
+
+.nav .nav-menu .nav-menu-item {
+    color: #fff;
+    font-size: .42667rem;
+    padding: .26667rem .53333rem
+}
+
+.nav .nav-menu .nav-menu-item:not(:last-child) {
+    border-bottom: 1px rgba(255,255,255,.2) solid
+}
+
+.nav .nav-menu.ng-hide-add,.nav .nav-menu.ng-hide-remove {
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all
+}
+
+.nav .nav-menu.ng-hide {
+    opacity: 0
+}
+
+.form-group {
+    margin-top: .26667rem;
+    position: relative
+}
+
+.form-group.has-error .help-block {
+    color: #ee5930
+}
+
+.form-group.has-error .form-control,.form-group.has-error .form-control:focus {
+    border-color: #ee5930
+}
+
+.form-group.has-error .input-icon {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/input_error@2x.png)
+}
+
+.form-group.form-active .input-icon {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/input_cancel@2x.png)
+}
+
+.form-group .form-control:focus {
+    border-color: #53a0e3
+}
+
+.form-group label {
+    display: inline-block;
+    max-width: 100%;
+    font-size: .34667rem;
+    color: #999
+}
+
+.form-group .input-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    background-size: .34rem .34rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.form-group .help-block {
+    color: #666;
+    font-size: .32rem;
+    margin: 0;
+    padding-left: .26667rem
+}
+
+.form-group .form-control {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    padding: .26667rem;
+    font-size: .4rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: .16rem;
+    -webkit-transition: border-color ease-in-out .15s;
+    transition: border-color ease-in-out .15s;
+    outline: 0;
+    resize: none
+}
+
+.form-group .form-control.disabled,.form-group .form-control[disabled] {
+    background-color: #ececec;
+    color: #c2c2c2!important
+}
+
+.form-group ::-webkit-input-placeholder {
+    color: #c2c2c2
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate
+}
+
+.input-group.has-error {
+    padding-bottom: .4rem
+}
+
+.input-group.has-error .help-block {
+    position: absolute;
+    top: 1.2rem;
+    z-index: 3
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-bottom: 0;
+    display: table-cell;
+    border-right-color: #ececec
+}
+
+.input-group .form-control:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.input-group .input-group-addon {
+    line-height: 1;
+    overflow: hidden;
+    border: 1px solid #dedede;
+    border-radius: 0 .16rem .16rem 0;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+    border-left: none
+}
+
+.input-group .input-group-addon .img-code {
+    height: 1.06rem;
+    width: 2.8rem;
+    vertical-align: middle
+}
+
+.input-group .input-group-addon.unit {
+    font-size: .4rem;
+    color: #999;
+    padding: .26667rem;
+    background-color: #fff
+}
+
+.input-group .input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.input-group .input-group-btn .btn {
+    margin: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 1.1rem;
+    font-size: .4rem;
+    width: 2.8rem;
+    border: 1px solid #dedede;
+    border-left: none
+}
+
+.form-list-group {
+    margin-top: .8rem;
+    background-color: #fff
+}
+
+.form-list-group .form-list-error,.form-list-group .form-list-title {
+    font-size: .34667rem;
+    margin: 0;
+    padding-left: .4rem;
+    background-color: #f7f7f7
+}
+
+.form-list-group .form-list-title {
+    padding-bottom: .13333rem
+}
+
+.form-list-group .form-list-error {
+    color: #ee5930
+}
+
+.form-list-group .form-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: .42667rem;
+    padding: .26667rem 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 1.2rem
+}
+
+.form-list-group .form-list-item.no-label,.form-list-tip {
+    padding-left: .4rem
+}
+
+.form-list-group .form-list-item:nth-child(2) {
+    border-top: 1px solid #dedede
+}
+
+.form-list-group .form-list-item:last-child {
+    border-bottom: 1px solid #dedede
+}
+
+.form-list-group .form-list-item:not(:last-child) {
+    border-bottom: 1px solid #ececec
+}
+
+.form-list-group .form-list-item label {
+    margin-left: .4rem
+}
+
+.form-list-group .form-list-item .form-control {
+    font-size: .42667rem;
+    color: #666;
+    -webkit-appearance: none;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    text-align: right
+}
+
+.form-list-group .form-list-item .form-control.disabled {
+    color: #c2c2c2!important;
+    -webkit-text-fill-color: #c2c2c2
+}
+
+.form-list-group .form-list-item .form-control[disabled] {
+    -webkit-text-fill-color: #c2c2c2!important;
+    -webkit-opacity: 1;
+    color: #c2c2c2!important
+}
+
+.form-list-group .form-list-item select {
+    direction: rtl
+}
+
+.form-list-group .form-list-item .icon-box {
+    width: .93333rem;
+    height: .4rem
+}
+
+.form-list-group .form-list-item .icon-box.icon-chevron {
+    background: url(https://static.souyidai.com/wap/2.0/images/chevon_right@2x.png) center center no-repeat;
+    background-size: contain
+}
+
+.form-list-group .form-list-item .icon-box.icon-error {
+    background: url(https://static.souyidai.com/wap/2.0/images/input_error@2x.png) center center no-repeat;
+    background-size: contain
+}
+
+.form-list-group .form-list-item.no-label .form-control {
+    text-align: left
+}
+
+.form-list-group textarea.form-control {
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    outline: 0;
+    resize: none;
+    width: 100%;
+    font-size: .4rem;
+    padding: .4rem;
+    line-height: 1.2
+}
+
+.form-list-group textarea.form-control.disabled {
+    color: #c2c2c2!important;
+    background-color: #fff
+}
+
+.form-list-group.normal-form .form-control {
+    text-align: left;
+    padding-left: .4rem
+}
+
+.form-list-group.normal-form select {
+    direction: ltr
+}
+
+.form-list-tip {
+    font-size: .32rem;
+    margin-bottom: .13333rem;
+    margin-top: .8rem;
+    color: #999
+}
+
+.form-upload {
+    margin-bottom: .4rem;
+    background-color: #fff;
+    border-top: 1px #dedede solid;
+    border-bottom: 1px #dedede solid;
+    padding: 0 .4rem
+}
+
+.form-upload .form-upload-lable {
+    font-size: .4rem
+}
+
+.form-upload .form-upload-input {
+    width: 2.13333rem;
+    height: 2.13333rem;
+    outline: 0;
+    border: 1px dotted #53a0e3;
+    border-radius: .16rem;
+    background: url(https://static.souyidai.com/wap/2.0/images/upload.png) center center no-repeat;
+    background-size: 1.33333rem .90667rem;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    display: inline-block;
+    color: transparent;
+    vertical-align: top
+}
+
+.form-upload .form-upload-input:hover {
+    background-color: #ececec
+}
+
+.form-upload .form-upload-input::-webkit-file-upload-button {
+    visibility: hidden
+}
+
+.form-upload .row {
+    overflow-x: scroll;
+    height: 2.3rem;
+    padding-top: .13333rem
+}
+
+.form-upload .form-upload-count {
+    text-align: right;
+    color: #999;
+    font-size: .32rem;
+    margin: .26667rem 0
+}
+
+.form-upload .form-upload-image {
+    display: inline-block;
+    position: relative;
+    margin-left: .13333rem
+}
+
+.form-upload .form-upload-image img {
+    border-radius: .16rem;
+    width: 2.13333rem;
+    height: 2.13333rem
+}
+
+.form-upload .form-upload-image .icon-close {
+    width: .53333rem;
+    height: .53333rem;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -.13333rem;
+    right: -.1rem
+}
+
+.dialog,.dialog-back {
+    position: fixed;
+    display: none
+}
+
+.dialog-back {
+    top: -5rem;
+    bottom: -5rem;
+    left: -5rem;
+    right: -5rem;
+    background-color: rgba(0,0,0,.6);
+    z-index: 97
+}
+
+.dialog {
+    width: 8.5rem;
+    height: auto;
+    border-radius: .2rem;
+    background-color: #fcfcfc;
+    top: 4rem;
+    left: .72rem;
+    z-index: 98
+}
+
+.dialog .dialog-simple {
+    text-align: center
+}
+
+.dialog .dialog-simple .dialog-simple-header {
+    margin-top: 1rem;
+    font-size: .48rem;
+    font-weight: 700
+}
+
+.dialog .dialog-simple .dialog-simple-content {
+    font-size: .4rem;
+    padding: 0 .53333rem;
+    overflow-y: scroll;
+    max-height: 3.8rem
+}
+
+.dialog.dialog-top {
+    top: 3rem
+}
+
+.dialog .dialog-header {
+    text-align: center;
+    font-size: .4rem;
+    font-weight: 700;
+    padding: .53333rem 0;
+    line-height: 1;
+    border-bottom: 2px #ececec solid
+}
+
+.dialog .dialog-header span {
+    color: #ee5930
+}
+
+.dialog .dialog-content {
+    padding: .66667rem 1.3rem .8rem;
+    line-height: 1.1;
+    min-height: 3rem
+}
+
+.dialog .dialog-content p {
+    margin: 0
+}
+
+.dialog .dialog-content .dialog-invest-info:first-child {
+    font-size: .4rem;
+    font-weight: 700;
+    margin-bottom: .26667rem
+}
+
+.dialog .dialog-content .dialog-invest-info:not(:first-child) {
+    color: #999;
+    font-size: .34667rem
+}
+
+.dialog .dialog-btn-box {
+    margin-top: .26667rem;
+    border-top: 1px #dedede solid
+}
+
+.dialog .dialog-btn-box .btn-dialog:first-child {
+    border-bottom-left-radius: .2rem
+}
+
+.dialog .dialog-btn-box .btn-dialog:not(:first-child) {
+    border-left: 1px #dedede solid;
+    border-bottom-right-radius: .2rem
+}
+
+.dialog .dialog-btn-box .btn-single {
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem
+}
+
+.dialog .btn-dialog {
+    padding: .4rem 0;
+    background-color: #fcfcfc;
+    display: inline-block;
+    line-height: 1;
+    border: none;
+    outline: 0;
+    font-size: .48rem
+}
+
+.dialog .btn-dialog.btn-disabled {
+    color: #c2c2c2!important
+}
+
+.dialog .btn-dialog.btn-default {
+    color: #006ac7;
+    font-weight: 700
+}
+
+.dialog .btn-dialog.btn-second {
+    color: #006ac7
+}
+
+.dialog .dialog-form {
+    text-align: left;
+    padding: 0 .8rem .66667rem
+}
+
+.dialog .dialog-form .form-group {
+    margin: 0
+}
+
+.dialog .dialog-form .btn {
+    margin: 0;
+    font-size: .4rem;
+    padding: .2rem;
+    position: absolute;
+    right: .13333rem;
+    top: .13333rem
+}
+
+@-webkit-keyframes dialog-show {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes dialog-show {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes dialog-hide {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    100% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+}
+
+@keyframes dialog-hide {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    100% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+}
+
+.dialog-show-am {
+    -webkit-animation: dialog-show .3s forwards;
+    animation: dialog-show .3s forwards
+}
+
+.dialog-close-am {
+    -webkit-animation: dialog-hide .3s forwards;
+    animation: dialog-hide .3s forwards
+}
+
+.share-overlay {
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    right: -1rem;
+    z-index: 10;
+    display: none
+}
+
+.share-overlay .share-guide {
+    width: 8.84rem;
+    height: 3.66667rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem
+}
+
+.help-icon {
+    width: .53333rem;
+    height: .53333rem;
+    margin-right: .26667rem;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: -.1rem;
+    background-repeat: no-repeat
+}
+
+.icon-warn,.icon-warn-blue {
+    width: .26667rem;
+    height: .26667rem
+}
+
+.icon-25,.icon-warn {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: .13333rem
+}
+
+.help-icon.help-icon-1 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/1.png)
+}
+
+.help-icon.help-icon-2 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/2.png)
+}
+
+.help-icon.help-icon-3 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/3.png)
+}
+
+.help-icon.help-icon-4 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/4.png)
+}
+
+.help-icon.help-icon-5 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/5.png)
+}
+
+.help-icon.help-icon-6 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/6.png)
+}
+
+.help-icon.help-icon-7 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/7.png)
+}
+
+.help-icon.help-icon-8 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/8.png)
+}
+
+.help-icon.help-icon-9 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/9.png)
+}
+
+.help-icon.help-icon-10 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/10.png)
+}
+
+.help-icon.help-icon-11 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/11.png)
+}
+
+.help-icon.help-icon-12 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/12.png)
+}
+
+.help-icon.help-icon-13 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/13.png)
+}
+
+.help-icon.help-icon-14 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/14.png)
+}
+
+.help-icon.help-icon-15 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/15.png)
+}
+
+.help-icon.help-icon-16 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/16.png)
+}
+
+.help-icon.help-icon-17 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/17.png)
+}
+
+.help-icon.help-icon-18 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/18.png)
+}
+
+.help-icon.help-icon-19 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/19.png)
+}
+
+.help-icon.help-icon-20 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/20.png)
+}
+
+.help-icon.help-icon-21 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/21.png)
+}
+
+.help-icon.help-icon-22 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/22.png)
+}
+
+.help-icon.help-icon-23 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/23.png)
+}
+
+.help-icon.help-icon-24 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/24.png)
+}
+
+.help-icon.help-icon-25 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/25.png)
+}
+
+.help-icon.help-icon-26 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/26.png)
+}
+
+.help-icon.help-icon-27 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/27.png)
+}
+
+.help-icon.help-icon-28 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/28.png)
+}
+
+.help-icon.help-icon-29 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/29.png)
+}
+
+.help-icon.help-icon-30 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/30.png)
+}
+
+.help-icon.help-icon-31 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/31.png)
+}
+
+.help-icon.help-icon-32 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/32.png)
+}
+
+.help-icon.help-icon-33 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/33.png)
+}
+
+.help-icon.help-icon-34 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/34.png)
+}
+
+.help-icon.help-icon-35 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/help_icon/35.png)
+}
+
+.icon-warn {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/warn@2x.png)
+}
+
+.icon-warn-blue {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/warn_blue@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-left: .13333rem
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    font-size: 0;
+    display: inline-block;
+    margin-left: .53333rem;
+    border-left: .2rem solid transparent;
+    border-right: .2rem solid transparent;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.arrow.up {
+    border-bottom: .2rem solid #cfcfcf
+}
+
+.arrow.down {
+    border-top: .2rem solid #cfcfcf
+}
+
+.icon-25 {
+    width: .33333rem;
+    height: .33333rem;
+    vertical-align: -.05rem
+}
+
+.icon-check-green,.icon-tip-blue {
+    display: block;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.icon-wechat-time {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/wechat/time@2x.png)
+}
+
+.icon-wechat-bao {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/wechat/bao@2x.png)
+}
+
+.icon-tip-blue {
+    width: 1.33333rem;
+    height: 1.33333rem;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/wechat/tip_blue@2x.png);
+    margin-right: auto
+}
+
+.icon-tip-blue.icon-md {
+    width: .66667rem;
+    height: .66667rem;
+    margin-right: .13333rem
+}
+
+.icon-check-green {
+    width: 1.33333rem;
+    height: 1.33333rem;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/check_true_mid@2x.png);
+    margin-right: auto
+}
+
+.icon-price {
+    width: .2rem;
+    height: .2rem;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/score/icon-price.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: .06667rem;
+    vertical-align: .03rem
+}
+
+.icon-close {
+    width: .53333rem;
+    height: .53333rem;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/close-tp.png);
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.icon-history,.icon-quest,.icon-score {
+    width: .34667rem;
+    height: .34667rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: .13333rem;
+    vertical-align: -.06rem
+}
+
+.icon-score {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/score/icon-score.png)
+}
+
+.icon-history {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/score/icon-history.png)
+}
+
+.icon-quest {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/score/icon-quest.png)
+}
+
+.tab-view,.tab-view li {
+    background-color: #f7f7f7;
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.tab-view {
+    width: 100%;
+    display: flex
+}
+
+.tab-view.tab-fixed {
+    position: fixed;
+    z-index: 10;
+    top: 0
+}
+
+.tab-view.tab-fixed .tab-active {
+    background-color: #f7f7f7;
+    border-bottom: 1px #dedede solid
+}
+
+.tab-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    height: 1.28rem
+}
+
+.tab-list .tab-active {
+    border-bottom: none;
+    background-color: #f7f7f7;
+    border-right: 1px #dedede solid;
+    border-left: 1px #dedede solid
+}
+
+.tab-list .tab-active a {
+    color: #53a0e3
+}
+
+.tab-view li {
+    float: none;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-bottom: 1px #dedede solid;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: background-color .3s ease;
+    transition: background-color .3s ease
+}
+
+.tab-view li a {
+    text-align: center;
+    color: #999;
+    font-size: .4rem;
+    width: 100%
+}
+
+.wechat-tab li.tab-active {
+    border-bottom: 1px #53a0e3 solid;
+    border-left: none;
+    border-right: none
+}
+
+.tab-btn-view {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #53a0e3;
+    border-radius: .16rem;
+    overflow: hidden
+}
+
+.tag.xmj-image,.tag.xmj-image-grey {
+    display: inline-block;
+    width: 1.3rem;
+    height: .43rem;
+    background-size: 100% 100%
+}
+
+.tab-btn-view .tab-btn {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #fff;
+    border: none;
+    color: #53a0e3;
+    padding: .2rem 0;
+    font-size: .34667rem;
+    -webkit-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+    outline: 0
+}
+
+.tab-btn-view .tab-btn.active {
+    background-color: #53a0e3;
+    color: #fff
+}
+
+.tag {
+    border-radius: .08rem;
+    padding: .09rem;
+    position: relative
+}
+
+.tag.orange {
+    background-color: #ee5930;
+    color: #fff
+}
+
+.tag.green {
+    background-color: #77b716;
+    color: #fff
+}
+
+.tag.jjs-color {
+    background-color: #dd9d1b;
+    color: #fff
+}
+
+.tag.yellow {
+    background-color: #ffb324;
+    color: #fff
+}
+
+.tag.orange-light {
+    background-color: #ff6803;
+    color: #fff
+}
+
+.tag.gray {
+    background-color: #dedede;
+    color: #fff
+}
+
+.tag.border {
+    background-color: transparent;
+    color: #ffce54;
+    border: 1px solid #ffce54
+}
+
+.tag.tag-left-radius {
+    border-radius: .3rem 0 0 .3rem;
+    padding-left: .2rem;
+    line-height: 1
+}
+
+.tag.xmj-image {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/xmj@2x.png)
+}
+
+.tag.xmj-image-grey {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/xmj_gry@2x.png)
+}
+
+.tag .tag-arrow {
+    position: absolute;
+    top: .17rem;
+    left: -.32rem;
+    border-width: .12rem .2rem;
+    border-style: dashed solid dashed dashed
+}
+
+.tag .tag-arrow.orange-light {
+    border-color: transparent #ff6803 transparent transparent
+}
+
+.tag .tag-arrow.gray {
+    border-color: transparent #dedede transparent transparent
+}
+
+.form-range {
+    -webkit-appearance: none;
+    margin-top: .53333rem;
+    width: 100%;
+    border-radius: .4rem
+}
+
+.form-range:focus {
+    outline: 0
+}
+
+.form-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: .1rem;
+    cursor: pointer;
+    animate: .2s
+}
+
+.form-range::-webkit-slider-thumb {
+    width: .6rem;
+    height: .6rem;
+    box-shadow: 0 2px 3px #c5c5c5;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -.25rem
+}
+
+.range-label {
+    font-size: .32rem;
+    color: #999;
+    margin: .26667rem 0 0
+}
+
+.range-label .right {
+    float: right
+}
+
+.range-label .green {
+    color: #77b716
+}
+
+.range-label .orange {
+    color: #ff6803
+}
+
+.toast-wrap {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 99
+}
+
+.toast {
+    padding: .26667rem .4rem;
+    border-radius: .2rem;
+    background-color: rgba(0,0,0,.6);
+    z-index: 99;
+    max-width: 80%;
+    line-height: .48rem;
+    font-size: .4rem;
+    color: #fff;
+    display: none
+}
+
+@-webkit-keyframes toast-show {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes toast-show {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes toast-hide {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    100% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+}
+
+@keyframes toast-hide {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    100% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+}
+
+.toast-show-am {
+    -webkit-animation: toast-show .3s forwards;
+    animation: toast-show .3s forwards
+}
+
+.toast-close-am {
+    -webkit-animation: toast-hide .3s forwards;
+    animation: toast-hide .3s forwards
+}
+
+.tab-select {
+    width: 100%;
+    background-color: #fff;
+    font-size: .4rem;
+    position: relative;
+    z-index: 10
+}
+
+.tab-select.tab-select-fixed {
+    position: fixed;
+    top: 0
+}
+
+.loader-back,.tab-select-overlay {
+    top: -5rem;
+    bottom: -5rem;
+    left: -5rem;
+    right: -5rem;
+    position: fixed
+}
+
+.tab-select .tab-select-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .4rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px #dedede solid;
+    z-index: 10
+}
+
+.tab-select .tab-select-list {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .2rem .4rem;
+    display: none
+}
+
+.tab-select .tab-select-list .select-list-item {
+    color: #666;
+    border: 1px solid #dedede;
+    width: 2.4rem;
+    padding: .13333rem .4rem;
+    text-align: center;
+    border-radius: .16rem;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.tab-select .tab-select-list .select-list-item.active {
+    color: #53a0e3;
+    border: 1px solid #53a0e3
+}
+
+.tab-select-overlay {
+    background-color: rgba(0,0,0,.6);
+    display: none;
+    z-index: 2
+}
+
+.loader-back {
+    background-color: transparent;
+    display: none;
+    z-index: 100
+}
+
+.loader {
+    display: none;
+    position: fixed;
+    top: 5.73333rem;
+    left: 3.46667rem;
+    width: 2.93333rem;
+    height: 2.93333rem;
+    background-color: rgba(0,0,0,.6);
+    z-index: 101;
+    border-radius: .16rem;
+    padding: .4rem
+}
+
+.bid-header,.carousel .indicators span.cur {
+    background-color: #fff
+}
+
+.loader .loader-svg .loader-circle {
+    fill: #fff
+}
+
+.loader .loader-svg .loader-path {
+    fill: #53a0e3
+}
+
+.carousel {
+    position: relative;
+    max-width: 10rem;
+    overflow: hidden;
+    margin: auto;
+    height: 4.69333rem
+}
+
+.carousel:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 50%
+}
+
+.carousel .carousel-list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0
+}
+
+.carousel .carousel-list .carousel-item {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.carousel .carousel-list .carousel-item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none
+}
+
+.carousel .indicators {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 0
+}
+
+.carousel .indicators span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%
+}
+
+.bid-detail,.bid-header,.bid-info,.bid-info .bid-info-list,.list-btn {
+    border-bottom: 1px #dedede solid
+}
+
+.bid-detail,.list-btn.single {
+    border-top: 1px #dedede solid
+}
+
+.bid-header {
+    padding: 1.06rem .4rem .5rem;
+    position: relative
+}
+
+.bid-header .bid-title {
+    position: absolute;
+    top: 0;
+    font-size: .34667rem;
+    font-weight: 700;
+    margin-top: .26667rem
+}
+
+.bid-header .bid-rate {
+    margin: 0;
+    font-size: .34667rem;
+    color: #ff6803;
+    position: relative;
+    line-height: 1
+}
+
+.bid-info .bid-info-items .bid-info-item .icon,.list-btn .icon {
+    margin-right: .13333rem;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.bid-header .bid-rate .bid-rate-num {
+    font-size: 1.6rem
+}
+
+.bid-header .bid-rate .bid-rate-num.sm {
+    font-size: 1.08rem;
+    line-height: 1.6rem
+}
+
+.bid-header .bid-rate .bid-rate-right {
+    display: inline-block;
+    position: relative;
+    line-height: 1.8
+}
+
+.bid-header .bid-progress {
+    position: absolute;
+    right: .4rem;
+    top: .66rem;
+    width: 2.06rem;
+    height: 2.06rem;
+    text-align: center
+}
+
+.bid-header .bid-progress span {
+    position: absolute;
+    width: 100%;
+    right: 0
+}
+
+.bid-header .bid-progress svg #arc,.bid-header .bid-progress svg .arc {
+    stroke: #ffb324
+}
+
+.bid-header .bid-progress svg.full #arc {
+    stroke: #77b716
+}
+
+.bid-header .bid-progress .percent {
+    font-size: .4rem;
+    top: .6rem
+}
+
+.bid-header .bid-progress .status {
+    font-size: .32rem;
+    color: #666;
+    top: 1.05rem
+}
+
+.bid-header .bid-prop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #999;
+    font-size: .34667rem;
+    margin-top: .33rem
+}
+
+.bid-header .bid-prop>:nth-child(1) {
+    text-align: left;
+    width: 2.46rem
+}
+
+.bid-header .bid-prop>:nth-child(2) {
+    text-align: center;
+    width: 2.72rem;
+    border-left: 1px #ececec solid;
+    border-right: 1px #ececec solid
+}
+
+.bid-header .bid-prop>:nth-child(3) {
+    text-align: right;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.bid-header .bid-prop span {
+    color: #333;
+    font-size: .4rem
+}
+
+.bid-header .bid-notes {
+    font-size: .34666667rem;
+    color: #999;
+    margin-top: .2rem
+}
+
+.bid-info {
+    background-color: #f7f7f7;
+    padding: .4rem
+}
+
+.bid-info .bid-info-list .block,.bid-info .bid-info-list .inline {
+    padding-bottom: .15rem
+}
+
+.bid-info .bid-info-list {
+    text-align: left;
+    color: #999;
+    font-size: .34667rem;
+    line-height: 1.2;
+    padding-bottom: .15rem
+}
+
+.bid-info .bid-info-list .inline.right {
+    text-align: right
+}
+
+.bid-info .bid-info-list .block span {
+    float: right
+}
+
+.bid-info .bid-info-list span {
+    color: #333;
+    font-size: .4rem
+}
+
+.bid-info .bid-info-list:not(:first-child) {
+    padding-top: .4rem
+}
+
+.bid-info .bid-info-items {
+    padding-top: .4rem;
+    color: #666;
+    font-size: .37333rem
+}
+
+.bid-info .bid-info-items .bid-info-item {
+    line-height: 1.6
+}
+
+.bid-info .bid-info-items .bid-info-item .icon {
+    width: .4rem;
+    height: .4rem;
+    display: inline-block;
+    vertical-align: -.05rem
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-1yuan {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/1yuan@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-bili {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/bili@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-jiari {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/jiari@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-jinbi {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/jinbi@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-zhuanrang {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/zhuanrang@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-qixiri {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/qixiri@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-sui {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/sui@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-t {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/t@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-bei {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/bei@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-nojiaxi {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/nojiaxi@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-nohongbao {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/nohongbao@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-yu {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/yu@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-new {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/new@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-shangxian {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/shangxian@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-onetoone {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/onetoone.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-beforeover {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/beforeover.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-1yuan-1 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/1yuan@2x-1.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-duliqixi {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/duliqixi@2x.png)
+}
+
+.bid-info .bid-info-items .bid-info-item .icon.icon-zhineng {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/zhineng@2x.png)
+}
+
+.list-btn {
+    background-color: #fff;
+    display: block;
+    padding: .4rem;
+    font-size: .4rem;
+    color: #333
+}
+
+.list-btn.single {
+    margin-top: .26667rem
+}
+
+.list-btn .icon {
+    width: .67rem;
+    height: .67rem;
+    display: inline-block;
+    vertical-align: -.18rem
+}
+
+.list-btn .icon.icon-dun {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/bao_icon@2x.png)
+}
+
+.list-btn .icon.icon-danbao {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/danbao_icon@2x.png)
+}
+
+.list-btn .icon.icon-ya {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/ya_icon@2x.png)
+}
+
+.list-btn .icon.icon-xieyi {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/xieyi_icon@2x.png)
+}
+
+.list-btn .icon.icon-shouquan {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/shouquan_icon@2x.png)
+}
+
+.list-btn .icon.icon-repay {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/repayment_icon@2x.png)
+}
+
+.list-btn .icon.icon-tishishu {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/tishishu_icon@2x.png)
+}
+
+.list-btn .icon.icon-process {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/processicon.png)
+}
+
+.list-btn .icon.icon-jiegou {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/jiegou.png)
+}
+
+.list-btn .icon.icon-xmjlist {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/xmjlist_icon@2x.png)
+}
+
+.list-btn .icon.icon-xmjdetail {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/xmjdetail_icon@2x.png)
+}
+
+.list-btn .icon.icon-chevron-right {
+    width: .2rem;
+    background: url(https://static.souyidai.com/wap/2.0/images/chevon_right@2x.png) center center no-repeat;
+    float: right;
+    margin-right: 0;
+    background-size: contain;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.list-btn .icon.icon-chevron-right.up {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+.list-btn .icon.icon-chevron-right.down {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.list-btn .desc {
+    float: right;
+    font-size: .4rem;
+    color: #c2c2c2;
+    margin-right: .3rem;
+    margin-top: .1rem
+}
+
+.bid-detail {
+    background-color: #fff;
+    margin-top: .26667rem;
+    font-size: .37333rem
+}
+
+.bid-detail.no-border-top {
+    border-top: none
+}
+
+.bid-detail .bid-detail-header {
+    padding: .4rem;
+    font-weight: 700;
+    border-bottom: 1px #ececec solid
+}
+
+.bid-audit-content,.bid-audit-list,.bid-audit-panel .bid-rose-graph,.bid-history {
+    border-bottom: 1px #dedede solid
+}
+
+.bid-detail .bid-detail-header a {
+    float: right;
+    font-weight: 400
+}
+
+.bid-detail .bid-detail-content {
+    padding: .53333rem .4rem;
+    word-break: break-all
+}
+
+.bid-detail .bid-detail-content .content-title {
+    margin: 0 0 .13333rem
+}
+
+.bid-detail .bid-detail-content .content-title:not(:first-child) {
+    margin-top: .4rem
+}
+
+.bid-detail .bid-detail-content .content-text {
+    margin: 0;
+    color: #666
+}
+
+.bid-detail .bid-detail-list {
+    padding: .53333rem .4rem
+}
+
+.bid-detail .bid-detail-list .detail-list-item {
+    color: #999;
+    padding: .08rem 0;
+    overflow: hidden
+}
+
+.bid-detail .bid-detail-list .detail-list-item span {
+    float: right;
+    color: #333
+}
+
+.bid-detail .bid-detail-list .detail-list-item span.green {
+    color: #77b716
+}
+
+.bid-detail .bid-detail-list .detail-list-item span.orange {
+    color: #ff6803
+}
+
+.bid-detail .bid-detail-list .detail-list-item span.gray,.bid-tips {
+    color: #999
+}
+
+.bid-detail .bid-detail-list .detail-list-item h2 {
+    padding-top: .4rem;
+    float: left;
+    font-size: .32rem
+}
+
+.bid-detail .bid-detail-column {
+    padding: .53333rem .4rem
+}
+
+.bid-detail .bid-detail-column .detail-column-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.bid-detail .bid-detail-column .detail-column-line .column-left {
+    padding-right: .26667rem
+}
+
+.bid-detail .bid-detail-column .detail-column-line .column-right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.bid-tips {
+    padding: .4rem;
+    font-size: .32rem
+}
+
+.sydbid-bodybg {
+    background-color: #a7d9fe
+}
+
+.sydbid-box {
+    padding: 0 .53333rem
+}
+
+.sydbid-box .bid-header {
+    border-radius: .16rem .16rem 0 0
+}
+
+.sydbid-box .btn-bottom {
+    border-radius: 0 0 .16rem .16rem;
+    position: static
+}
+
+.bid-audit-header {
+    padding: .4rem;
+    font-size: .37333rem;
+    font-weight: 700
+}
+
+.bid-audit-header .icon {
+    position: relative;
+    top: -.07rem
+}
+
+.bid-audit-content {
+    background-color: #fff;
+    padding: .53333rem .4rem;
+    margin-bottom: .26667rem;
+    font-size: .37333rem
+}
+
+.bid-audit-list {
+    margin: 0 0 2rem;
+    padding-left: 1rem;
+    font-size: .4rem
+}
+
+.bid-audit-list li {
+    padding: .3rem 0;
+    border-top: 1px #ececec solid
+}
+
+.bid-audit-list li:first-child {
+    border-top: none
+}
+
+.bid-audit-list .icon {
+    display: inline-block;
+    width: .41rem;
+    height: .41rem;
+    position: relative;
+    top: .1rem;
+    margin-right: .4rem
+}
+
+.bid-audit-list .icon.icon-check {
+    background: url(https://static.souyidai.com/wap/2.0/images/check@2x.png) center center no-repeat;
+    background-size: contain;
+    float: right
+}
+
+.bid-audit-list .audit-list-tip {
+    margin: 0 0 0 -.6rem;
+    padding-top: .26667rem;
+    padding-bottom: .26667rem;
+    padding-right: .4rem;
+    font-size: .32rem;
+    color: #ee5930;
+    border-top: 1px #ececec solid
+}
+
+.bid-audit-panel {
+    padding-bottom: 2rem;
+    font-size: .37rem
+}
+
+.bid-audit-panel .bid-rose-graph {
+    background-color: #fff
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg {
+    width: 7.73rem;
+    height: 7.73rem;
+    margin: 0 auto;
+    padding: .4rem 0;
+    position: relative
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .graph-tag {
+    position: absolute;
+    color: #fff;
+    font-size: .34667rem;
+    line-height: 1.1;
+    text-align: center;
+    display: none
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .graph-tag span {
+    font-size: .6rem
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .graph-tag.tag-1 {
+    top: 1.85rem;
+    left: 4rem
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .graph-tag.tag-2 {
+    top: 4rem;
+    left: 5rem
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .graph-tag.tag-3 {
+    top: 5.3rem;
+    left: 3.1rem
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .graph-tag.tag-4 {
+    top: 4rem;
+    left: 1.35rem
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .graph-tag.tag-5 {
+    top: 1.85rem;
+    left: 2.4rem
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .rose-graph-title {
+    position: absolute;
+    top: 3.8rem;
+    width: 100%;
+    text-align: center
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .rose-graph-star {
+    position: absolute;
+    top: 3.4rem;
+    width: 100%;
+    text-align: center
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .rose-graph-star .star {
+    width: .35rem;
+    height: .35rem;
+    display: inline-block
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .rose-graph-star .star.star-full {
+    background: url(https://static.souyidai.com/wap/2.0/images/star_full@2x.png) center center no-repeat;
+    background-size: contain
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .rose-graph-star .star.star-half {
+    background: url(https://static.souyidai.com/wap/2.0/images/star_half@2x.png) center center no-repeat;
+    background-size: contain
+}
+
+.bid-audit-panel .bid-rose-graph .rose-graph-svg .rose-graph-star .star.star-empty {
+    background: url(https://static.souyidai.com/wap/2.0/images/star_empty@2x.png) center center no-repeat;
+    background-size: contain
+}
+
+.bid-audit-panel .bid-rose-graph .audit-panel-triangle {
+    width: .37rem;
+    height: .37rem;
+    border-bottom: 1px #dedede solid;
+    border-right: 1px #dedede solid;
+    margin: 0 auto -.2rem;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.bid-audit-panel .bid-audit-conclude {
+    padding: .8rem;
+    margin-bottom: 2rem
+}
+
+.bid-audit-panel .bid-audit-conclude .audit-conclude-header {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    margin: 0
+}
+
+.bid-audit-panel .bid-audit-conclude .audit-conclude-content {
+    width: 6.4rem;
+    margin: .25rem 0 0;
+    display: inline-block
+}
+
+.bid-audit-panel .bid-audit-conclude .audit-conclude-image {
+    width: 1.93rem;
+    height: 1.66rem;
+    float: right
+}
+
+.bid-history {
+    background-color: #fff
+}
+
+.bid-history .bid-history-header {
+    border-bottom: 1px #ececec solid;
+    color: #333;
+    font-weight: 700;
+    padding: .4rem;
+    font-size: .37333rem
+}
+
+.bid-history .bid-history-list {
+    margin: 0 0 2rem;
+    padding: 0 .4rem;
+    list-style: none
+}
+
+.bid-history .bid-history-list .bid-history-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .26667rem 0;
+    font-size: .4rem;
+    color: #333;
+    text-align: right
+}
+
+.bid-history .bid-history-list .bid-history-item .medal {
+    width: .4rem;
+    height: .4rem;
+    display: inline-block;
+    margin-left: .13333rem;
+    vertical-align: -.03rem;
+    background: url(https://static.souyidai.com/wap/2.0/images/medal@2x.png) center center no-repeat;
+    background-size: contain
+}
+
+.bid-history .bid-history-list .bid-history-item img.hidImg {
+    height: .4rem;
+    display: inline-block;
+    margin-left: .13333rem;
+    vertical-align: -.03rem;
+    background-size: contain
+}
+
+.bid-history .bid-history-list .bid-history-item .myinvest {
+    width: 1.22rem;
+    height: .42rem;
+    display: inline-block;
+    margin-left: .13333rem;
+    vertical-align: -.03rem;
+    background: url(https://static.souyidai.com/wap/2.0/images/myinvest@2x.png) center center no-repeat;
+    background-size: contain
+}
+
+.bid-history .bid-history-list .bid-history-item .history-item-tiem {
+    color: #999;
+    font-size: .32rem
+}
+
+.help-banner {
+    width: 100%;
+    vertical-align: middle
+}
+
+.help-grid-header {
+    margin: 0;
+    padding: .4rem .4rem .2rem;
+    color: #666
+}
+
+.help-grid {
+    border-bottom: 1px #dedede solid;
+    border-top: 1px #dedede solid;
+    background-color: #fff
+}
+
+.help-grid .list-btn {
+    border-bottom: none
+}
+
+.help-grid .help-row:not(:last-child),.help-grid .list-btn:not(:last-child) {
+    border-bottom: 1px #ececec solid
+}
+
+.help-grid .list-btn span {
+    float: right;
+    color: #999
+}
+
+.help-grid .help-row {
+    padding: .2rem 0
+}
+
+.help-grid .help-row .help-row-item {
+    padding: .2rem .4rem;
+    font-size: .4rem;
+    color: #333
+}
+
+.help-grid .help-row .help-row-item:last-child {
+    border-left: 1px #ececec solid
+}
+
+.wechat-login {
+    padding: .4rem
+}
+
+.wechat-login .logo {
+    width: 4.13rem;
+    margin-bottom: .26667rem
+}
+
+.wechat-login-disable {
+    background-color: #fff;
+    border-bottom: 1px #dedede solid;
+    text-align: center
+}
+
+.wechat-login-disable .wechat-login-name {
+    padding-top: 1rem;
+    font-size: .64rem;
+    margin: 0
+}
+
+.wechat-login-disable .wechat-mark {
+    font-size: .32rem;
+    color: #ffb324;
+    margin: 0;
+    padding-top: .26667rem;
+    padding-bottom: 1.25rem
+}
+
+.wechat-login-disable .wechat-mark .icon-vip {
+    width: .33rem;
+    height: .24rem;
+    display: inline-block;
+    margin-right: .13333rem;
+    background: url(https://static.souyidai.com/wap/2.0/images/vip@2x.png) no-repeat;
+    background-size: contain
+}
+
+.wechat-banner {
+    width: 100%;
+    vertical-align: middle
+}
+
+.wechat-index-silde {
+    overflow: hidden;
+    margin: .93333rem .4rem 0;
+    height: 6.6rem
+}
+
+.wechat-index-silde .wechat-index-list {
+    position: relative
+}
+
+.wechat-index-silde .wechat-index-card {
+    border-radius: .16rem;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 6.6rem;
+    overflow: hidden
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-rate {
+    color: #ff6803;
+    font-size: .34667rem;
+    margin-top: .66667rem;
+    margin-bottom: 0;
+    line-height: 1.2
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-rate span {
+    font-size: 1.46667rem
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-rate.mg-xxl {
+    margin-top: 1.06667rem
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-time {
+    border-radius: .16rem;
+    background-color: #84c1ee;
+    font-size: .32rem;
+    padding: .13333rem .2rem;
+    color: #fff
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-time.pre {
+    background-color: #b7d7f3
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-time.end {
+    background-color: #dbdbdb
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-info {
+    margin-top: .53333rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-info p {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0;
+    font-size: .34667rem;
+    color: #999
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-info p span {
+    font-size: .48rem;
+    color: #333
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-info p:not(:first-child) {
+    border-left: 1px #ececec solid
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-footer {
+    position: absolute;
+    color: #666;
+    bottom: 0;
+    border-top: 1px #ececec solid;
+    background-color: #f7f7f7;
+    width: 100%;
+    font-size: .34667rem;
+    padding: .2rem 0
+}
+
+.wechat-index-silde .wechat-index-card .wechat-card-corner {
+    position: absolute;
+    background-color: #77b716;
+    color: #fff;
+    font-size: .32rem;
+    padding: .13333rem 0;
+    line-height: 1;
+    width: 3rem;
+    top: .3rem;
+    left: -.9rem;
+    margin: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.wechat-index-silde .wechat-index-card .wechat-card-corner.end {
+    background-color: #dbdbdb
+}
+
+.wechat-index-silde .wechat-index-card .wechat-has-invest {
+    position: absolute;
+    right: .3rem;
+    top: .3rem;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    width: 2.13333rem;
+    height: 2.13333rem;
+    overflow: hidden
+}
+
+.wechat-index-silde .wechat-index-card .wechat-has-invest span {
+    font-size: .48rem;
+    color: #c2c2c2;
+    display: inline-block;
+    margin-top: .65rem;
+    border-top: 1px #dedede solid;
+    border-bottom: 1px #dedede solid;
+    width: 100%;
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg)
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-tag {
+    position: absolute;
+    left: 0;
+    top: .3rem;
+    font-size: .48rem;
+    background-color: #53a0e3;
+    color: #fff;
+    padding: 0 .5rem 0 .26667rem
+}
+
+.wechat-index-silde .wechat-index-card .wechat-bid-tag:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: .3rem .25rem .3rem .2rem;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #fff transparent transparent
+}
+
+.slide-dot {
+    margin-top: .4rem;
+    text-align: center
+}
+
+.slide-dot span {
+    display: inline-block;
+    width: .13333rem;
+    height: .13333rem;
+    background-color: #c2c2c2;
+    margin-left: .13333rem;
+    border-radius: 50%
+}
+
+.slide-dot span.cur {
+    background-color: #ff6803
+}
+
+.wechat-balance {
+    text-align: center;
+    font-size: .32rem;
+    margin-top: .66667rem;
+    margin-bottom: 0
+}
+
+.wechat-coupon-tip {
+    display: block;
+    text-align: center;
+    font-size: .34667rem;
+    padding: .26667rem .53333rem;
+    color: #ff6803;
+    background-color: #feece0;
+    border-radius: .16rem;
+    width: 6.3rem;
+    margin: .53333rem auto .13333rem
+}
+
+.wechat-coupon-tip .coupon-tip-triangle {
+    display: block;
+    width: .37rem;
+    height: .37rem;
+    margin: 0 auto -.4rem;
+    background-color: #feece0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.wechat-id5-tip {
+    background-color: #fff;
+    padding: .4rem;
+    border-bottom: 1px #dedede solid;
+    text-align: center
+}
+
+.wechat-id5-tip .icon-check-green,.wechat-id5-tip .icon-tip-blue {
+    margin-top: 1.2rem
+}
+
+.wechat-id5-tip .id5-tip-text {
+    font-size: .53333rem;
+    margin-bottom: .66667rem
+}
+
+.wechat-id5-tip .regist-tip-text {
+    font-size: .53333rem;
+    margin-bottom: .4rem
+}
+
+.wechat-id5-tip .setpwd-phone {
+    line-height: 1;
+    margin-bottom: 1rem
+}
+
+.wechat-id5-tip .setpwd-phone span {
+    font-size: .53333rem;
+    color: #999;
+    margin-right: 1.73333rem
+}
+
+.wechat-id5-tip .setpwd-phone a {
+    font-size: .4rem;
+    color: #666;
+    text-decoration: none
+}
+
+.wechat-id5-tip .id5-tip-progress {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5.2rem;
+    margin-bottom: 1.1rem
+}
+
+.wechat-id5-tip.no-border-bottom {
+    border-bottom: none
+}
+
+.wechat-share {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/wechat/share_back@2x.jpg);
+    background-color: #fffef6
+}
+
+.bid-invest,.take-cash-list {
+    background-color: #fff
+}
+
+.wechat-share .wechat-share-banner {
+    width: 8.16rem;
+    position: absolute;
+    z-index: 2;
+    top: 5.9rem;
+    left: 1.2rem
+}
+
+.wechat-share .wechat-share-header-img {
+    border-radius: .16rem;
+    width: .8rem;
+    height: .8rem;
+    position: absolute;
+    top: .4rem;
+    left: .4rem
+}
+
+.wechat-share .wechat-share-name {
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    font-size: .32rem;
+    color: #b7d7f3;
+    line-height: 1.2
+}
+
+.wechat-share .wechat-share-name span {
+    display: inline-block;
+    font-size: .4rem;
+    color: #fff;
+    width: 4rem;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.wechat-share .wechat-index-silde {
+    margin-top: 7.2rem
+}
+
+.wechat-share .wechat-index-card {
+    position: relative
+}
+
+.wechat-share .wechat-index-card .wechat-bid-title {
+    font-size: .4rem;
+    text-align: left;
+    padding-left: .4rem;
+    margin-top: .9rem
+}
+
+.wechat-share .wechat-index-card .wechat-bid-info {
+    margin-top: .4rem
+}
+
+.wechat-share .wechat-index-card p {
+    text-align: left;
+    padding-left: .4rem
+}
+
+.wechat-share .wechat-index-card p.rate {
+    color: #ff6803
+}
+
+.wechat-share .wechat-index-card p.rate span {
+    color: #ff6803;
+    font-size: .90667rem;
+    line-height: 1
+}
+
+.wechat-wrap {
+    padding: .4rem
+}
+
+.wechat-wrap .pay-res {
+    height: 4.8rem;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/wechat/repay_result@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2.66rem;
+    width: 9.2rem;
+    text-align: center;
+    padding-top: 1.2rem
+}
+
+.wechat-wrap .pay-res i {
+    display: inline-block;
+    width: 1.04rem;
+    height: 1.04rem;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.wechat-wrap .pay-res i.pay-fail-icon {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/wechat/check_fail@2x.png)
+}
+
+.wechat-wrap .pay-res i.pay-succ-icon {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/wechat/check_true@2x.png)
+}
+
+.wechat-wrap .pay-res .pay-res-desc {
+    padding-top: .21333rem;
+    padding-bottom: .13333rem
+}
+
+.wechat-wrap .pay-res .pay-res-desc .pay-desc {
+    font-size: .48rem;
+    color: #333
+}
+
+.wechat-wrap .pay-res .pay-res-desc .pay-res-tel {
+    font-size: .34667rem;
+    height: .61333rem;
+    line-height: .61333rem;
+    color: #c2c2c2
+}
+
+.wechat-wrap .pay-res p {
+    margin: 0
+}
+
+.wechat-wrap .bindcard-name {
+    font-size: .4rem;
+    color: #333;
+    margin-bottom: .4rem
+}
+
+.wechat-wrap .bindcard-desc {
+    padding-top: .66667rem
+}
+
+.wechat-wrap .bindcard-desc .baincard-tip {
+    margin: 0
+}
+
+.wechat-wrap .bindcard-desc .baincard-tip .icon-warn-blue {
+    margin-right: .13333rem;
+    margin-left: 0;
+    font-size: .32rem;
+    color: #666
+}
+
+.wechat-wrap .bindcard-desc .baincard-list {
+    padding-left: .4rem;
+    font-size: .32rem;
+    color: #999
+}
+
+.wechat-wrap .bindcard-desc .baincard-list span,.wechat-wrap .form-group label {
+    color: #333
+}
+
+.register-backpwd {
+    padding: .4rem;
+    font-size: .4rem
+}
+
+.register-backpwd p {
+    color: #666;
+    text-align: right;
+    margin: 0
+}
+
+.bank-table {
+    font-size: .32rem;
+    margin: auto auto .2rem;
+    width: 100%
+}
+
+.bank-table td {
+    padding-top: .13333rem
+}
+
+.bank-table td img {
+    width: .4rem;
+    vertical-align: -.1rem;
+    margin-right: .13333rem
+}
+
+.take-cash-img {
+    width: 1.33rem;
+    height: 1.33rem;
+    display: block;
+    margin: 1.33rem auto .26667rem
+}
+
+.take-cash-title {
+    font-size: .53333rem;
+    margin: 0
+}
+
+.take-cash-sub-title {
+    font-size: .34667rem;
+    color: #999;
+    margin: 0 0 .53333rem
+}
+
+.take-cash-list {
+    padding: .53333rem .4rem;
+    border-top: 1px #dedede solid;
+    border-bottom: 1px #dedede solid
+}
+
+.take-cash-list .list-item {
+    color: #999;
+    padding: .13333rem 0
+}
+
+.take-cash-list .list-item span {
+    float: right;
+    color: #333;
+    font-size: .4rem;
+    font-weight: 700
+}
+
+.take-cash-tip {
+    margin: .13333rem 0 0;
+    padding: 0 .4rem
+}
+
+.bid-invest-progress,.bid-transfer-info {
+    background-color: #f7f7f7;
+    border-bottom: 1px #dedede solid
+}
+
+.bid-invest-progress {
+    height: 5.4rem;
+    position: relative;
+    padding-top: .53333rem
+}
+
+.bid-invest-progress .invest-progress-svg {
+    height: 4.2rem;
+    width: 5.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.bid-invest-progress .invest-progress-svg #arc,.bid-invest-progress .invest-progress-svg .arc {
+    stroke: #ffb324
+}
+
+.bid-invest-progress .invest-progress-info {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 0
+}
+
+.bid-invest-progress .invest-progress-info .tag {
+    position: relative;
+    top: 1.9rem
+}
+
+.bid-invest-progress .invest-progress-info .invest-amount {
+    position: relative;
+    top: 2.1rem;
+    margin: 0;
+    font-size: .48rem
+}
+
+.bid-invest-progress .invest-progress-info .invest-limit {
+    position: relative;
+    top: 2.1rem;
+    margin: 0;
+    font-size: .32rem;
+    color: #999
+}
+
+.bid-invest-progress .invest-progress-info .invest-tip {
+    position: relative;
+    top: 2.7rem;
+    margin: 0 auto;
+    width: 4.1rem;
+    display: block
+}
+
+.bid-transfer-info {
+    padding: .53333rem 0;
+    text-align: center
+}
+
+.bid-transfer-info .invest-limit {
+    margin: 0;
+    font-size: .34667rem
+}
+
+.bid-transfer-info .invest-amount {
+    margin-top: .26667rem;
+    font-size: .64rem;
+    margin-bottom: .53333rem
+}
+
+.bid-transfer-info .bid-trans-prop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #999;
+    font-size: .34667rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.bid-transfer-info .bid-trans-prop>div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.bid-transfer-info .bid-trans-prop>:nth-child(2) {
+    border-left: 1px #ececec solid;
+    border-right: 1px #ececec solid
+}
+
+.bid-transfer-info .bid-trans-prop span {
+    color: #333;
+    font-size: .4rem
+}
+
+.bid-invest-list {
+    padding: .933rem .8rem
+}
+
+.bid-invest-list .invest-list-item {
+    margin: 0;
+    font-size: .34667rem;
+    color: #999
+}
+
+.bid-invest-list .invest-list-item span {
+    color: #333
+}
+
+.bid-invest-form {
+    padding: 0 .8rem
+}
+
+.bid-invest-form .form-group {
+    margin: 0
+}
+
+.bid-invest-form .form-group label {
+    text-align: center;
+    width: 100%;
+    margin-bottom: .26667rem
+}
+
+.bid-invest-form .form-group .form-control {
+    text-align: center;
+    color: #53a0e3;
+    font-size: .53333rem;
+    font-weight: 700
+}
+
+.bid-invest-form .form-group .form-control.overflow {
+    color: #ee5930
+}
+
+.bid-invest-result {
+    background-color: #fff;
+    padding: 1.33rem .8rem
+}
+
+.bid-invest-result.no-tip {
+    border-bottom: 1px #dedede solid
+}
+
+.bid-invest-result .result-image {
+    width: 1rem
+}
+
+.bid-invest-result .result-text {
+    display: inline-block;
+    vertical-align: top
+}
+
+.bid-invest-result .result-text p {
+    margin: 0
+}
+
+.bid-invest-result .result-text :first-child {
+    font-size: .53333rem;
+    font-weight: 700;
+    line-height: 1.2
+}
+
+.bid-invest-result .result-text :not(:first-child) {
+    font-size: .4rem;
+    line-height: 1;
+    margin-top: 1.5rem
+}
+
+.invest-result-tip {
+    background-color: #fff5da;
+    border-bottom: 1px #dedede solid;
+    color: #ffb324;
+    font-size: .32rem;
+    margin: 0;
+    padding: .2rem .4rem
+}
+
+.account-detail-item,.bank-card {
+    background-color: #fff;
+    border-bottom: 1px #dedede solid;
+    border-top: 1px #dedede solid
+}
+
+.invest-result-tip .orange {
+    color: #ee5930
+}
+
+.bid-real-amount {
+    margin-top: .26667rem;
+    line-height: 1;
+    color: #999;
+    font-size: .34667rem;
+    width: 100%
+}
+
+.bid-real-amount span {
+    font-size: .53333rem;
+    color: #53a0e3;
+    font-weight: 700
+}
+
+.security-page {
+    background-image: -webkit-linear-gradient(top,#55a1e3,#e3f1ff 10rem);
+    background-image: linear-gradient(to bottom,#55a1e3,#e3f1ff 10rem);
+    padding-top: .66667rem;
+    padding-bottom: .4rem;
+    position: relative
+}
+
+.security-page .security-img {
+    width: 8.13rem;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    display: block
+}
+
+.security-page .security-line {
+    width: 9.05333rem;
+    position: relative;
+    top: -.95rem;
+    z-index: 0
+}
+
+.security-page .security-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 2
+}
+
+.security-page .security-item.right .security-icon {
+    float: right;
+    margin-right: .26667rem
+}
+
+.security-page .security-item.right .security-text {
+    text-align: left
+}
+
+.security-page .security-item.left .security-icon {
+    float: left;
+    margin-left: .26667rem
+}
+
+.security-page .security-item.left .security-text {
+    text-align: right
+}
+
+.security-page .security-item .security-item-img {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.security-page .security-item .security-item-img .security-icon {
+    width: 2.66667rem
+}
+
+.security-page .security-item .security-text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-top: .13333rem;
+    color: #333;
+    font-size: .32rem
+}
+
+.security-page .security-item .security-text .security-title {
+    margin: 0;
+    font-size: .53333rem;
+    color: #53a0e3
+}
+
+.guide-page .guide-img {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: block
+}
+
+.fund-page {
+    padding: 0 .4rem
+}
+
+.fund-page .redeem-money {
+    font-size: .32rem;
+    color: #999;
+    margin: .66667rem 0 0
+}
+
+.fund-page .redeem-money span {
+    font-size: .4rem;
+    color: #333;
+    font-weight: 700
+}
+
+.fund-page .redeem-tip {
+    font-size: .32rem;
+    color: #999;
+    margin-top: .53333rem
+}
+
+.bank-card {
+    padding: .4rem
+}
+
+.bank-card .bank-name {
+    margin: 0;
+    font-size: .53333rem;
+    font-weight: 700
+}
+
+.bank-card .bank-logo {
+    width: .58667rem;
+    height: .58667rem;
+    margin-right: .26667rem;
+    position: relative;
+    top: .05rem
+}
+
+.bank-card .bank-num {
+    color: #666;
+    font-size: .48rem;
+    margin: 0 0 0 .8rem
+}
+
+.account-glance {
+    padding: .53333rem .4rem
+}
+
+.account-glance .glance-title {
+    margin: 0;
+    color: #999;
+    font-size: .32rem
+}
+
+.account-glance .glance-title .glance-num {
+    color: #333;
+    font-size: .48rem
+}
+
+.account-glance .glance-title .glance-num-lg {
+    color: #333;
+    font-weight: 700;
+    font-size: .64rem
+}
+
+.account-glance .glance-title.main-title {
+    margin-bottom: .53333rem
+}
+
+.account-glance .glance-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: .26667rem
+}
+
+.account-glance .glance-row>* {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.account-glance .glance-row .glance-title:not(:first-child) {
+    border-left: 1px #dedede solid;
+    padding-left: .4rem
+}
+
+.account-glance .glance-row .glance-btn-box {
+    padding-left: .4rem
+}
+
+.account-glance .glance-row .glance-btn-box .btn {
+    width: 1.86rem;
+    font-size: .4rem;
+    padding: .2rem 0
+}
+
+.account-detail-empty {
+    text-align: center;
+    margin-top: 2rem
+}
+
+.account-detail-empty .detail-empty-image {
+    width: 1.5rem
+}
+
+.account-detail-empty .detail-empty-text {
+    color: #999;
+    font-size: .34667rem;
+    margin: .26667rem 0 0
+}
+
+.account-detail-item {
+    margin-bottom: .26667rem;
+    font-size: .37333rem
+}
+
+.account-detail-item.no-border-top {
+    border-top: none
+}
+
+.account-detail-item .detail-header {
+    padding: .4rem;
+    font-size: .4rem;
+    border-bottom: 1px #ececec solid
+}
+
+.account-detail-item .detail-header a {
+    float: right;
+    font-weight: 400
+}
+
+.account-detail-item .detail-list {
+    padding: .53333rem .4rem
+}
+
+.account-detail-item .detail-list .list-item {
+    color: #999;
+    padding: .08rem 0
+}
+
+.account-detail-item span {
+    float: right;
+    color: #333
+}
+
+.account-detail-item span.green {
+    color: #77b716
+}
+
+.account-detail-item span.orange {
+    color: #ff6803
+}
+
+.account-detail-item span.gray {
+    color: #999
+}
+
+.wechat-top-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .13333rem .4rem;
+    background-color: #f5faff;
+    border-bottom: 1px solid #ddecf9;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.wechat-top-bar span {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    color: #53a0e3;
+    font-size: .32rem;
+    line-height: 1.2
+}
+
+.wechat-top-bar span.gray {
+    color: #666
+}
+
+.wechat-top-bar.no-fixed {
+    background-color: #f7f7f7;
+    border-bottom: none;
+    padding: .13333rem 0
+}
+
+.wechat-myac-amount,.wechat-myac-aslist,.wechat-myac-datetit,.wechat-myac-module {
+    border-bottom: 1px solid #dedede
+}
+
+.mgtop08 {
+    margin-top: .8rem
+}
+
+.wechat-myac-amount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .66667rem .4rem;
+    background-color: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center
+}
+
+.wechat-myac-row span.draw,.wechat-myac-row span.included {
+    text-align: right
+}
+
+.wechat-myac-amount .wechat-myac-aside {
+    display: block;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.wechat-myac-amount .wechat-myac-aside .wechat-myac-name {
+    color: #999;
+    font-size: .32rem
+}
+
+.wechat-myac-amount .wechat-myac-aside .wechat-myac-value {
+    color: #333;
+    font-size: .64rem;
+    font-weight: 700
+}
+
+.wechat-myac-amount .wechat-myac-aside .wechat-myac-value em {
+    font-style: normal;
+    font-size: .34667rem
+}
+
+.wechat-myac-amount .wechat-myac-aside.left-line {
+    border-left: 1px solid #dedede
+}
+
+.wechat-myac-amount .wechat-myac-aside.left-line .wechat-myac-value {
+    color: #ff6803
+}
+
+.wechat-myac-datetit {
+    padding: .13333rem .4rem;
+    background-color: #f7f7f7;
+    color: #999;
+    font-size: .32rem
+}
+
+.wechat-myac-module {
+    padding: .4rem;
+    background-color: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.wechat-myac-module .wechat-myac-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: .4rem;
+    margin-bottom: .26667rem
+}
+
+.wechat-myac-module .wechat-myac-title i {
+    display: block;
+    font-style: normal;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2
+}
+
+.wechat-myac-module .wechat-myac-title strong {
+    display: block;
+    font-weight: 400;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: right;
+    color: #77b716
+}
+
+.wechat-myac-module .wechat-myac-title strong.settled {
+    color: #c2c2c2
+}
+
+.wechat-myac-module .wechat-myac-list {
+    font-size: .37333rem;
+    color: #666
+}
+
+.wechat-myac-module .wechat-myac-list span {
+    display: block;
+    padding: 0;
+    margin: 0
+}
+
+.wechat-myac-aslist,.wechat-myac-details {
+    margin-top: .93333rem;
+    border-top: 1px solid #dedede;
+    background-color: #fff
+}
+
+.wechat-myac-module .wechat-myac-list i {
+    display: inline-block;
+    width: 1.8rem;
+    height: auto;
+    font-style: normal
+}
+
+.wechat-myac-module .wechat-myac-list strong {
+    font-weight: 400
+}
+
+.wechat-myac-aslist {
+    padding: 0 .4rem
+}
+
+.wechat-myac-aslist .wechat-myac-samlltit {
+    display: block;
+    width: 100%;
+    height: 1.17333rem;
+    border-bottom: 1px solid #ececec;
+    line-height: 1.17333rem;
+    font-size: .48rem
+}
+
+.wechat-myac-aslist .wechat-myac-column {
+    border-bottom: 1px solid #ececec;
+    padding: .4rem 0
+}
+
+.wechat-myac-details.bd-bottom,.wechat-myac-row,.wechat-myac-safecy {
+    border-bottom: 1px solid #dedede
+}
+
+.wechat-myac-aslist .wechat-myac-column span {
+    display: block;
+    line-height: .74667rem
+}
+
+.wechat-myac-aslist .wechat-myac-column span em {
+    font-style: normal;
+    font-size: .4rem;
+    color: #999
+}
+
+.wechat-myac-aslist .wechat-myac-column span strong {
+    font-weight: 400;
+    float: right;
+    font-size: .4rem
+}
+
+.wechat-myac-aslist .wechat-myac-total {
+    display: block;
+    padding: .4rem 0
+}
+
+.wechat-myac-aslist .wechat-myac-total em {
+    font-style: normal;
+    font-size: .4rem;
+    color: #999
+}
+
+.wechat-myac-aslist .wechat-myac-total strong {
+    font-weight: 400;
+    float: right;
+    font-size: .4rem
+}
+
+.wechat-myac-details.pd-justify {
+    padding: 0 .4rem
+}
+
+.wechat-myac-details.md-top {
+    margin-top: .26667rem
+}
+
+.wechat-myac-details.relative {
+    position: relative;
+    overflow: hidden
+}
+
+.wechat-myac-row {
+    padding: .4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.wechat-myac-row span {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.wechat-myac-row span strong {
+    display: block;
+    font-weight: 400;
+    font-size: .48rem
+}
+
+.wechat-myac-row span em {
+    font-style: normal;
+    font-size: .29333rem;
+    color: #999
+}
+
+.wechat-myac-row span.draw strong {
+    color: #ff6803
+}
+
+.wechat-myac-row span.included strong {
+    color: #77b716
+}
+
+.wechat-myac-safecy {
+    margin-top: .93333rem;
+    border-top: 1px solid #dedede;
+    background-color: #fff;
+    padding: 0 .4rem
+}
+
+.wechat-myac-degree,.wechat-myac-safecolumn.bd-bottom {
+    border-bottom: 1px solid #ececec
+}
+
+.wechat-myac-safecy.margin-top {
+    margin-top: .26667rem
+}
+
+.wechat-myac-point-ico {
+    width: .2rem;
+    height: .34667rem;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/wechat/arrow-wechat@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.wechat-myac-safecolumn {
+    padding: .4rem 0;
+    line-height: 1
+}
+
+.wechat-myac-safecolumn span {
+    font-size: .4rem
+}
+
+.wechat-myac-safecolumn .wechat-myac-approve {
+    float: right;
+    color: #c2c2c2
+}
+
+.wechat-myac-safecolumn .wechat-myac-approve.level {
+    color: #77b716
+}
+
+.wechat-myac-safecolumn .wechat-myac-approve.level-low {
+    color: #ff6803
+}
+
+.wechat-myac-safecolumn .wechat-myac-action {
+    float: right
+}
+
+.wechat-myac-safecolumn .wechat-myac-action a i {
+    display: block;
+    margin-left: .26667rem;
+    float: right;
+    margin-top: .02667rem
+}
+
+.wechat-myac-safecolumn .wechat-myac-action a em {
+    display: block;
+    font-style: normal;
+    float: left
+}
+
+.wechat-myac-safecolumn .wechat-myac-arrow {
+    display: block;
+    width: .26667rem;
+    height: .26667rem;
+    border-top: 2px solid #c2c2c2;
+    border-right: 2px solid #c2c2c2;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    float: right;
+    margin-top: .4rem;
+    margin-left: .2rem
+}
+
+.wechat-myac-degree.issue .issue-lt,.wechat-myac-entry span em {
+    width: 3.53333rem;
+    height: auto
+}
+
+.wechat-myac-degree {
+    padding: .4rem 0
+}
+
+.wechat-myac-degree::after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.wechat-myac-degree span {
+    display: block;
+    font-size: .37333rem
+}
+
+.wechat-myac-degree span strong {
+    display: block;
+    font-weight: 400;
+    padding-bottom: .13333rem;
+    font-size: .48rem
+}
+
+.wechat-myac-degree span em {
+    display: block;
+    font-style: normal;
+    color: #77b716
+}
+
+.wechat-myac-degree span.mark {
+    float: right;
+    margin-top: .33333rem
+}
+
+.wechat-myac-degree.issue span {
+    float: left
+}
+
+.wechat-myac-degree.issue span em {
+    color: #333
+}
+
+.wechat-myac-degree.issue .rt {
+    float: right
+}
+
+.wechat-myac-degree.issue .text-lighter {
+    color: #999
+}
+
+.wechat-myac-degree.issue .text-green {
+    color: #77b716
+}
+
+.wechat-myac-entry {
+    padding: .4rem 0
+}
+
+.wechat-myac-entry span {
+    display: block;
+    font-size: .37333rem;
+    line-height: .64rem
+}
+
+.wechat-myac-entry span em {
+    display: block;
+    font-style: normal;
+    color: #888;
+    float: left
+}
+
+.wechat-myac-entry span strong {
+    font-weight: 400
+}
+
+.wechat-myac-superscript {
+    position: absolute;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/wechat/benqi-wechat@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    width: .88rem;
+    height: .85333rem
+}
+
+.about {
+    padding-bottom: .42667rem;
+    width: 10rem
+}
+
+.about-index-silde {
+    margin: .93333rem .2rem 0
+}
+
+.about-index-silde .about-index-list {
+    position: relative
+}
+
+.about-index-silde .about-index-list .about-index-card .about_logo {
+    height: 1.73333rem;
+    background-size: contain;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center top
+}
+
+.about-index-silde .about-index-list .about-index-card .about_introduce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: .37333rem;
+    text-indent: 2em;
+    margin: .56rem .2rem 0
+}
+
+.score-page .quest-card,.store-header {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.about-index-silde .about-index-list .about-index-card .about_mission {
+    height: 4.13333rem;
+    background-color: #fff;
+    margin-top: .46667rem;
+    position: relative
+}
+
+.about-index-silde .about-index-list .about-index-card .about_mission .about-bid-tag {
+    position: absolute;
+    left: 0;
+    top: .4rem;
+    font-size: .48rem;
+    background-color: #53a0e3;
+    color: #fff;
+    padding: 0 .5rem 0 .26667rem
+}
+
+.about-index-silde .about-index-list .about-index-card .about_mission .about-bid-tag:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: .3rem .25rem .3rem .2rem;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #fff transparent transparent
+}
+
+.about-index-silde .about-index-list .about-index-card .about_mission .about_mission_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.6rem .45333rem 0 .42667rem;
+    font-size: .37333rem
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage {
+    height: 15.22667rem;
+    background-color: #fff;
+    margin-top: .37333rem;
+    position: relative
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about-bid-tag {
+    position: absolute;
+    left: 0;
+    top: .4rem;
+    font-size: .48rem;
+    background-color: #53a0e3;
+    color: #fff;
+    padding: 0 .5rem 0 .26667rem
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item.one,.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item.three {
+    padding-bottom: .58667rem
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about-bid-tag:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: .3rem .25rem .3rem .2rem;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #fff transparent transparent
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item {
+    padding-top: 1.97333rem
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item .about_advantage_item_icon {
+    width: 1.76rem;
+    height: 1.76rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: .4rem;
+    float: left
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item.one .about_advantage_item_icon {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_01.jpg)
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item.two .about_advantage_item_icon {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_02.jpg)
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item.three .about_advantage_item_icon {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_03.jpg)
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item.four {
+    padding-bottom: .85333rem
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item.four .about_advantage_item_icon {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_04.jpg)
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item.five {
+    padding-bottom: .58667rem
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item.five .about_advantage_item_icon {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_05.jpg)
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item .about_advantage_item_article {
+    padding-left: .4rem;
+    float: left;
+    width: 6.10667rem
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item .about_advantage_item_article .article_header {
+    font-size: .48rem
+}
+
+.about-index-silde .about-index-list .about-index-card .about_advantage .about_advantage_item .about_advantage_item_article .article_body {
+    color: #666;
+    font-size: .34667rem
+}
+
+.about-index-silde .about-index-list .about-index-card.whitebg {
+    background-color: #fff
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-sidebar {
+    border-color: #d2e8f6;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    border-style: none solid;
+    border-width: 0 .04rem 0 0;
+    height: 37.33333rem;
+    left: .85333rem;
+    position: absolute;
+    top: .18667rem;
+    width: 0;
+    z-index: -1
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon {
+    width: 1.30667rem;
+    height: 1.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_sideCatalog_blue.jpg);
+    float: left;
+    margin-left: .26667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-20150706 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_sideCatalog_orange.jpg);
+    margin-top: .18667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-20150706 .about-sideCatalog-date {
+    font-size: .34667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-20150630 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_sideCatalog_orange.jpg);
+    margin-top: .8rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-20150630 .about-sideCatalog-date {
+    font-size: .34667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201506 {
+    margin-top: 1.4rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201505 {
+    margin-top: 1.62667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201504 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_sideCatalog_orange.jpg);
+    margin-top: .8rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201504 .about-sideCatalog-date {
+    font-size: .34667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201503 {
+    margin-top: .48rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201501 {
+    margin-top: .93333rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201412 {
+    margin-top: 1.2rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201412 .about-sideCatalog-date {
+    margin: 0 0 0 .13333rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-2014117 {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_sideCatalog_orange.jpg);
+    margin-top: .93333rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-2014117 .about-sideCatalog-date {
+    margin: 0 0 0 .13333rem;
+    font-size: .34667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201411 {
+    margin-top: 1.46667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201411 .about-sideCatalog-date {
+    margin: 0 0 0 .13333rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201410 {
+    margin-top: 1.44rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201410 .about-sideCatalog-date {
+    margin: 0 0 0 .13333rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201409 {
+    margin-top: 1.17333rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201408 {
+    margin-top: 1.28rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-icon.date-201404 {
+    margin-top: .56rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-month {
+    color: #fff;
+    font-size: .34667rem;
+    margin: .17333rem 0 0 .24rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-date {
+    color: #fff;
+    font-size: .42667rem;
+    margin: 0 0 0 .26667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content {
+    font-size: .37333rem;
+    width: 7.33333rem;
+    float: left;
+    line-height: .4rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-20150706 {
+    color: #fe8230;
+    margin: .61333rem 0 0 .50667rem;
+    height: 1.2rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-20150630 {
+    color: #fe8230;
+    margin: 1.22667rem 0 0 .50667rem;
+    height: 1.2rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201506 {
+    margin: .58667rem 0 0 .50667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201505 {
+    margin: .74667rem 0 0 .50667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201504 {
+    color: #fe8230;
+    margin: 1.22667rem 0 0 .50667rem;
+    height: 1.2rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201503 {
+    margin: .50667rem 0 0 .50667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201501 {
+    margin: .86667rem 0 0 .50667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201412 {
+    margin: 1.2rem 0 0 .50667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-2014117 {
+    color: #fe8230;
+    margin: 1.38667rem 0 0 .50667rem;
+    height: 1.2rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201411 {
+    margin: .66667rem 0 0 .50667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201410 {
+    margin: 1.57333rem 0 0 .50667rem;
+    height: 1.2rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201409 {
+    margin: .73333rem 0 0 .50667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201408 {
+    margin: 1.69333rem 0 0 .50667rem;
+    height: 1.2rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-content.content-201404 {
+    margin: .96rem 0 0 .50667rem
+}
+
+.about-index-silde .about-index-list .about-sideCatalog-bg {
+    height: 3.73333rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/icon_bg.jpg);
+    background-position: bottom;
+    clear: both;
+    margin-bottom: .4rem
+}
+
+.about-index-silde .about-index-list .about-our-head {
+    margin-top: -.93333rem;
+    height: 6.50667rem;
+    width: 9.6rem;
+    background-color: #1a1d20
+}
+
+.about-index-silde .about-index-list .about-our-head .about-our-photo {
+    width: 2.53333rem;
+    height: 5.86667rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/photo_he.jpg);
+    background-position: bottom;
+    margin-left: .58667rem;
+    padding-top: 1.6rem;
+    float: left
+}
+
+.about-index-silde .about-index-list .about-our-head .about-our-content {
+    padding-left: 3.53333rem;
+    padding-right: .2rem
+}
+
+.about-index-silde .about-index-list .about-our-head .about-our-content .about-our-name {
+    font-size: .48rem;
+    color: #fff;
+    padding-top: .66667rem
+}
+
+.about-index-silde .about-index-list .about-our-head .about-our-content .about-our-position {
+    font-size: .32rem;
+    color: #ff6803;
+    line-height: .42667rem
+}
+
+.about-index-silde .about-index-list .about-our-head .about-our-content .about-our-article {
+    font-size: .34667rem;
+    color: #fff;
+    line-height: .37333rem
+}
+
+.about-index-silde .about-index-list .about-our-middle {
+    margin-top: .48rem;
+    margin-left: .2rem;
+    margin-right: .2rem
+}
+
+.about-index-silde .about-index-list .about-our-middle .about-our-middle-content {
+    width: 6rem;
+    margin-bottom: .66667rem;
+    float: left
+}
+
+.about-index-silde .about-index-list .about-our-middle .about-our-middle-name {
+    font-size: .48rem
+}
+
+.about-index-silde .about-index-list .about-our-middle .about-our-middle-position {
+    font-size: .32rem;
+    color: #ff6803
+}
+
+.about-index-silde .about-index-list .about-our-middle .about-our-middle-article {
+    font-size: .37333rem;
+    margin-top: .17333rem;
+    line-height: .4rem
+}
+
+.about-index-silde .about-index-list .about-our-middle .about-our-middle-photo {
+    width: 2.84rem;
+    height: 2.84rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: .66667rem;
+    margin-top: .13333rem;
+    float: right
+}
+
+.about-index-silde .about-index-list .about-our-middle .about-our-middle-photo.one {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/photo_zhou.jpg)
+}
+
+.about-index-silde .about-index-list .about-our-middle .about-our-middle-photo.two {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/photo_fan.jpg)
+}
+
+.about-index-silde .about-index-list .about-our-middle .about-our-middle-photo.three {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/photo_jiang.jpg)
+}
+
+.about-index-silde .about-index-list .about-our-coredepart {
+    clear: both;
+    padding-top: 2.66667rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    position: relative
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-bid-tag {
+    position: absolute;
+    left: 0;
+    top: 1.06667rem;
+    font-size: .48rem;
+    background-color: #53a0e3;
+    color: #fff;
+    padding: 0 .5rem 0 .26667rem
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-bid-tag:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: .3rem .25rem .3rem .2rem;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #fff transparent transparent
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-total {
+    width: 9.2rem;
+    height: 2.41333rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/weixin_about/coredepartment.jpg)
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-total .about-our-littleitem {
+    width: 1.73333rem;
+    margin: .8rem .26667rem 0 .29333rem;
+    font-size: .4rem;
+    color: #fff;
+    text-align: center;
+    float: left
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item {
+    padding-top: .8rem
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item.blue .about-our-item-flag {
+    background-color: #53a0e3
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item.blue .about-our-item-title {
+    color: #53a0e3
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item.yellowgreen .about-our-item-flag {
+    background-color: #8cd162
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item.yellowgreen .about-our-item-title {
+    color: #8cd162
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item.green .about-our-item-flag {
+    background-color: #5dd6ce
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item.green .about-our-item-title {
+    color: #5dd6ce
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item.pink {
+    padding-bottom: .73333rem
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item.pink .about-our-item-flag {
+    background-color: #ff8a8f
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item.pink .about-our-item-title {
+    color: #ff8a8f
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item-flag {
+    width: .10667rem;
+    height: .34667rem;
+    float: left;
+    border-radius: 5px
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item-title {
+    font-size: .42667rem;
+    margin-left: .13333rem;
+    line-height: .34667rem
+}
+
+.about-index-silde .about-index-list .about-our-coredepart .about-our-item-article {
+    padding-top: .24rem;
+    font-size: .32rem
+}
+
+.score-title {
+    margin-top: .4rem;
+    padding-right: .4rem;
+    font-size: .34667rem;
+    color: #999;
+    text-align: right
+}
+
+.score-title .icon-warn-blue {
+    margin-right: .13333rem
+}
+
+.score-page {
+    padding: .26667rem .4rem
+}
+
+.score-page .divider {
+    font-size: .34667rem;
+    color: #999;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: .2rem
+}
+
+.score-page .divider:after,.score-page .divider:before {
+    border-top: 1px solid #dedede;
+    position: absolute;
+    z-index: 3;
+    width: 50%;
+    top: 50%;
+    height: 0;
+    content: ''
+}
+
+.score-page .divider:before {
+    margin-left: -o-calc(-50% - 1em);
+    margin-left: calc(-50% - 1em)
+}
+
+.score-page .divider:after {
+    margin-left: 1em
+}
+
+.store-entrance,.store-title {
+    border-top: 1px #dedede solid
+}
+
+.score-page .quest-card {
+    margin-top: .26667rem;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 9.30667rem;
+    height: 3.17333rem;
+    background-image: url(https://static.souyidai.com/wap/2.0/images/score/quest-card.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.score-page .quest-card .quest-title {
+    font-size: .4rem;
+    color: #666;
+    text-align: left;
+    padding-left: .4rem;
+    width: 2.66667rem
+}
+
+.score-page .quest-card .quest-bouns {
+    font-size: .34667rem;
+    color: #53a0e3;
+    text-align: center;
+    width: 2.26667rem
+}
+
+.score-page .quest-card .quest-bouns .num {
+    font-size: .56rem;
+    font-weight: 700
+}
+
+.score-page .quest-card .quest-link {
+    font-size: .4rem;
+    color: #006ac7;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    text-align: right;
+    padding-right: .53333rem
+}
+
+.score-page .quest-card.finish {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/score/quest-card-finish.png)
+}
+
+.score-page .quest-card.finish p {
+    color: #c2c2c2
+}
+
+.sign-success {
+    z-index: 100;
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    display: none
+}
+
+.sign-success .sign-crips {
+    position: absolute;
+    top: 0;
+    margin-left: 10.5%;
+    width: 7.90667rem;
+    height: 6.02667rem;
+    opacity: 0
+}
+
+.sign-success .sign-dialog {
+    position: absolute;
+    top: 1.8rem;
+    margin-left: 17.4%;
+    width: 6.52rem;
+    height: 6rem
+}
+
+.sign-success .sign-light {
+    position: absolute;
+    top: 0;
+    margin-left: 7.2%;
+    width: 8.56rem;
+    height: 8.6rem;
+    -webkit-animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite
+}
+
+.sign-success .sign-score {
+    position: absolute;
+    top: 3.5rem;
+    width: 100%;
+    text-align: center;
+    color: #ffd850;
+    font-size: 1.6rem
+}
+
+.sign-success .sign-day {
+    position: absolute;
+    top: 7.2rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: .4rem
+}
+
+.sign-success .sign-day .day {
+    font-size: .42667rem;
+    font-weight: 700
+}
+
+.sign-back {
+    position: fixed;
+    top: -5rem;
+    bottom: -5rem;
+    left: -5rem;
+    right: -5rem;
+    background-color: rgba(0,0,0,.8);
+    display: none;
+    z-index: 97
+}
+
+.store-detail-header,.store-detail-title,.store-entrance,.store-header,.store-list {
+    background-color: #fff
+}
+
+@-webkit-keyframes zoomInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1,.1,.1) translate3d(0,-100px,0);
+        transform: scale3d(.1,.1,.1) translate3d(0,-100px,0);
+        -webkit-animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+        animation-timing-function: cubic-bezier(.55,.055,.675,.19)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        -webkit-animation-timing-function: cubic-bezier(.175,.885,.32,1);
+        animation-timing-function: cubic-bezier(.175,.885,.32,1)
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes zoomInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1,.1,.1) translate3d(0,-100px,0);
+        transform: scale3d(.1,.1,.1) translate3d(0,-100px,0);
+        -webkit-animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+        animation-timing-function: cubic-bezier(.55,.055,.675,.19)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        -webkit-animation-timing-function: cubic-bezier(.175,.885,.32,1);
+        animation-timing-function: cubic-bezier(.175,.885,.32,1)
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.zoomInDown {
+    -webkit-animation: zoomInDown .6s .3s forwards;
+    animation: zoomInDown .6s .3s forwards
+}
+
+.store-header {
+    padding: .2rem 0;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px #dedede solid
+}
+
+.store-header .store-header-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: .34667rem;
+    text-align: center;
+    padding: .13333rem 0
+}
+
+.store-header .store-header-item .orange {
+    color: #ff6803
+}
+
+.store-header .store-header-item:not(:first-child) {
+    border-left: 1px #ececec solid
+}
+
+.store-entrance {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .26667rem 0;
+    margin-top: .26667rem
+}
+
+.store-entrance .entrance-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: .32rem;
+    text-align: center
+}
+
+.store-entrance .entrance-img {
+    width: 1.33333rem;
+    height: 1.33333rem;
+    display: block;
+    margin: auto auto .13333rem
+}
+
+.store-title {
+    font-size: .34667rem;
+    padding: .26667rem;
+    border-left: 3px #ee5930 solid
+}
+
+.store-list {
+    border-top: 1px #ececec solid
+}
+
+.store-list .store-item {
+    border-bottom: 1px #ececec solid;
+    padding: .26667rem;
+    position: relative
+}
+
+.store-list .store-item .tag {
+    position: absolute;
+    right: .26667rem;
+    top: .26667rem
+}
+
+.store-list .store-item .store-item-img {
+    width: 4.4rem;
+    height: 3.2rem;
+    vertical-align: middle
+}
+
+.store-list .store-item .store-item-title {
+    font-size: .37333rem;
+    margin-bottom: 0;
+    margin-top: .13333rem;
+    line-height: 1;
+    height: .8rem;
+    word-break: break-all
+}
+
+.store-list .store-item .store-item-price {
+    color: #ff6803;
+    font-size: .37333rem;
+    margin-bottom: 0;
+    margin-top: .13333rem;
+    line-height: 1
+}
+
+.store-list .store-item:nth-child(odd) {
+    border-right: 1px #ececec solid
+}
+
+.store-detail-header {
+    position: relative
+}
+
+.store-detail-header .store-detail-banner {
+    height: 4.69333rem;
+    vertical-align: middle;
+    display: block;
+    margin: auto
+}
+
+.store-detail-header .tag {
+    position: absolute;
+    top: .26667rem;
+    right: 0
+}
+
+.store-detail-title {
+    font-size: .48rem;
+    border-bottom: 1px #dedede solid;
+    padding: .4rem;
+    line-height: 1
+}
+
+.store-detail-title .orange {
+    color: #ff6803;
+    padding-left: .26667rem
+}
+
+.store-tip {
+    margin: .53333rem .4rem 2rem;
+    border-radius: .16rem;
+    padding: .4rem;
+    border: 1px solid #dedede;
+    position: relative
+}
+
+.store-tip .store-tip-title {
+    background-color: #f7f7f7;
+    font-size: .37333rem;
+    padding: .13333rem .26667rem;
+    border: 1px solid #dedede;
+    position: absolute;
+    top: -.35rem;
+    left: 3.5rem
+}
+
+.store-detail-form {
+    background-color: #f7f7f7;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .26667rem .4rem .13333rem;
+    border-top: 1px #dedede solid
+}
+
+.store-detail-form .form-label {
+    font-size: .32rem;
+    color: #999;
+    margin-top: 0;
+    margin-bottom: .2rem;
+    line-height: 1
+}
+
+.store-detail-form .form-label .orange {
+    color: #ff6803
+}
+
+.store-detail-form .btn {
+    margin: 0
+}
+
+.store-detail-form .btn-minus {
+    width: 1.44rem;
+    height: 1.12rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px #dedede solid;
+    padding: 0;
+    vertical-align: top
+}
+
+.store-detail-form .btn-add {
+    width: 1.44rem;
+    height: 1.12rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 1px #dedede solid;
+    padding: 0;
+    vertical-align: top
+}
+
+.store-detail-form .detail-input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    font-size: .53333rem;
+    text-align: center;
+    border: none;
+    border-top: 1px #dedede solid;
+    border-bottom: 1px #dedede solid;
+    outline: 0;
+    line-height: 1;
+    width: 1.8rem;
+    height: 1.12rem;
+    vertical-align: top
+}
+
+.store-detail-form .detail-input.disabled {
+    background-color: #ececec;
+    color: #c2c2c2!important
+}
+
+.exchange-history-list {
+    border-top: 1px #dedede solid;
+    border-bottom: 1px #dedede solid;
+    margin-top: .66667rem;
+    background-color: #fff
+}
+
+.exchange-history-list .exchange-history-item {
+    padding: .13333rem .4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.exchange-history-list .exchange-history-item .item-img {
+    width: 2.13333rem;
+    height: 2.13333rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block
+}
+
+.exchange-history-list .exchange-history-item .item-text {
+    padding-left: .26667rem;
+    font-size: .42667rem
+}
+
+.exchange-history-list .exchange-history-item .item-text p {
+    margin: 0
+}
+
+.exchange-history-list .exchange-history-item .item-text span {
+    display: inline-block;
+    font-size: .32rem;
+    color: #666;
+    padding-top: .13333rem;
+    line-height: 1.2
+}
+
+.exchange-history-list .exchange-history-item .icon-chevron-right {
+    width: .2rem;
+    height: .4rem;
+    background: url(https://static.souyidai.com/wap/2.0/images/chevon_right@2x.png) center center no-repeat;
+    background-size: contain;
+    margin-left: auto
+}
+
+.exchange-history-list .exchange-history-item:not(:first-child) {
+    border-top: 1px #ececec solid
+}
+
+.address-list {
+    border-top: 1px #dedede solid;
+    border-bottom: 1px #dedede solid;
+    margin-bottom: .26667rem;
+    background-color: #fff
+}
+
+.recdborg-bodybg,.recdborg-btn {
+    background-color: #b53d0e
+}
+
+.address-list .address-item {
+    padding: .4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.address-list .address-item .icon {
+    width: .66667rem;
+    height: .66667rem;
+    display: none
+}
+
+.address-list .address-item .address-text {
+    padding-left: .26667rem;
+    font-size: .42667rem;
+    line-height: 1
+}
+
+.address-list .address-item .address-text p {
+    margin: 0
+}
+
+.address-list .address-item .address-text span {
+    display: inline-block;
+    font-size: .32rem;
+    color: #666;
+    padding-top: .13333rem;
+    line-height: 1.2
+}
+
+.address-list .address-item:not(:first-child) {
+    border-top: 1px #ececec solid
+}
+
+.address-list .address-item.selected .icon {
+    display: block
+}
+
+.address-add {
+    margin-top: .66667rem
+}
+
+figure {
+    margin: 0
+}
+
+.rt {
+    float: right
+}
+
+.recdborg-banner {
+    width: 10rem;
+    height: 9.92rem
+}
+
+.recdborg-banner img {
+    width: 100%;
+    height: 100%
+}
+
+.recdborg-btn {
+    height: 1.06667rem;
+    padding: 0 .4rem
+}
+
+.recdborg-btn a {
+    display: inline-block;
+    width: 4.37333rem;
+    height: 1.04rem;
+    line-height: 1.04rem;
+    font-size: .48rem;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #ffe114;
+    border-radius: .53333rem
+}
+
+.recdborg-btn .lt {
+    float: left
+}
+
+.recdborg-btn .rt {
+    float: right;
+    color: #a0360c;
+    background-color: #ffe114
+}
+
+.recdborg-btn .rt:active {
+    background-color: #fc0
+}
+
+.recdborg-desc {
+    height: 1.49333rem;
+    padding-top: .26667rem;
+    font-size: .32rem;
+    text-align: center;
+    color: #eea88d
+}
+
+.recdborg-liner {
+    min-height: 100px;
+    margin: 0 .33333rem;
+    padding-top: .8rem;
+    border-radius: .33333rem;
+    background-color: #fff
+}
+
+.recdborg-liner .title {
+    height: 1.14667rem;
+    margin: 0 0 .53333rem;
+    font-weight: 400;
+    font-size: .48rem;
+    text-align: center
+}
+
+.recdborg-liner .title>span {
+    display: inline-block;
+    width: 5.68rem;
+    height: 1.14667rem;
+    line-height: 1.14667rem;
+    text-align: center;
+    color: #fff;
+    background: url(http://localhost:8080/images/recdborrowing/a-1.png) left top no-repeat;
+    background-size: cover
+}
+
+.recdborg-liner .title.title-two>span {
+    width: 6.21333rem;
+    background: url(http://localhost:8080/images/recdborrowing/a-2.png) left top no-repeat;
+    background-size: cover
+}
+
+.recdborg-liner .title.title-three {
+    margin-top: .26667rem
+}
+
+.recdborg-liner .title.title-three>span {
+    width: 5.68rem;
+    background: url(http://localhost:8080/images/recdborrowing/a-3.png) left top no-repeat;
+    background-size: cover
+}
+
+.recdborg-liner .row-v1 {
+    padding-left: 1.2rem
+}
+
+.recdborg-liner .row-v1::after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.recdborg-liner .row-v1 figure {
+    float: left;
+    width: 3.92rem;
+    height: 2.41333rem
+}
+
+.recdborg-liner .row-v1 figure.hg-180 {
+    height: 2.4rem
+}
+
+.recdborg-liner .row-v1 figure.hg-140 {
+    height: 1.86667rem
+}
+
+.recdborg-liner .row-v1>span {
+    float: left;
+    display: inline-block;
+    line-height: .53333rem;
+    padding-top: .4rem;
+    padding-left: .24rem;
+    font-size: .4rem
+}
+
+.recdborg-liner img {
+    width: 100%;
+    height: 100%
+}
+
+.recdborg-liner .submit {
+    height: 1.06667rem;
+    margin-top: .4rem;
+    text-align: center
+}
+
+.recdborg-liner .submit a {
+    display: inline-block;
+    width: 8.4rem;
+    height: 1.06667rem;
+    line-height: 1.06667rem;
+    font-size: .48rem;
+    color: #fff;
+    border-radius: .53333rem;
+    background-color: #ff5a00
+}
+
+.recdborg-liner .submit a:active {
+    background-color: #e04f00
+}
+
+.recdborg-form::after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.recdborg-form>div {
+    height: .8rem;
+    margin-top: .26667rem
+}
+
+.recdborg-form>div>span {
+    float: left;
+    display: block
+}
+
+.recdborg-form>div .spcing-lt {
+    margin-left: .26667rem
+}
+
+.recdborg-form .name {
+    width: 3.33333rem;
+    height: .8rem;
+    line-height: .8rem;
+    padding-right: .2rem;
+    font-size: .37333rem;
+    text-align: right
+}
+
+.recdborg-form .group {
+    position: relative;
+    width: 5.57333rem;
+    height: .77333rem;
+    border: 1px solid #ddd;
+    border-radius: .10667rem
+}
+
+.recdborg-form .group input {
+    width: 4.4rem;
+    height: .53333rem;
+    padding-left: .21333rem;
+    margin: .08rem 0 0 .08rem;
+    border: 0 solid red;
+    outline: 0
+}
+
+.recdborg-form .group select {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 5.57333rem;
+    height: .77333rem;
+    border: 1px solid #ddd;
+    border-radius: .10667rem
+}
+
+.recdborg-form .group.focus {
+    border: 1px solid #53a0e3
+}
+
+.recdborg-form .group.err {
+    border: 1px solid #ff5a00
+}
+
+.recdborg-form .group.wls-248 {
+    width: 3.30667rem
+}
+
+.recdborg-form .group.wls-248 input {
+    width: 1.93333rem
+}
+
+.recdborg-form .group.wls-148 {
+    width: 1.97333rem;
+    text-align: center
+}
+
+.recdborg-form .group.wls-148 img {
+    width: 1.97333rem;
+    height: .77333rem;
+    margin-top: -1px;
+    margin-left: -1px;
+    border-radius: .10667rem
+}
+
+.recdborg-form .arrow-clp {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: .86667rem;
+    height: .77333rem;
+    border-radius: .10667rem;
+    text-align: center
+}
+
+.recdborg-form .hotspot {
+    display: inline-block
+}
+
+.recdborg-form .closed {
+    width: .48rem;
+    height: .48rem;
+    margin-top: .14667rem
+}
+
+.recdborg-form .fail {
+    width: .29333rem;
+    height: .29333rem;
+    margin-top: .22667rem
+}
+
+.recdborg-form .select {
+    width: .29333rem;
+    height: .18667rem;
+    margin-top: .29333rem
+}
+
+.recdborg-transduct {
+    position: relative;
+    min-height: 3.41333rem;
+    padding-left: .50667rem
+}
+
+.recdborg-transduct::after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.recdborg-transduct p {
+    width: 4.93333rem
+}
+
+.recdborg-transduct p>strong {
+    display: block;
+    padding-top: .26667rem;
+    padding-bottom: .2rem;
+    font-size: .64rem
+}
+
+.recdborg-transduct p>span {
+    display: block;
+    line-height: .66667rem;
+    font-size: .32rem
+}
+
+.recdborg-transduct .v1 {
+    position: absolute;
+    right: .13333rem;
+    top: 0;
+    display: block;
+    width: 4.14667rem;
+    height: 3.41333rem
+}
+
+.recdborg-transduct .v2 {
+    width: 3.93333rem;
+    height: 3.22667rem
+}
+
+.recdborg-transduct .v3 {
+    width: 4.13333rem;
+    height: 3.02667rem
+}
+
+.recdborg-footer {
+    font-size: .32rem;
+    line-height: 1.46667rem;
+    color: #eea88d;
+    text-align: center
+}
+
+.recdborg-share {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10rem;
+    height: 9.84rem
+}
+
+.recdborg-share img {
+    width: 100%;
+    height: 100%
+}
+
+.sydrisk-body {
+    width: 10rem;
+    margin: 0 auto
+}
+
+.sydrisk-des {
+    line-height: .56rem;
+    padding-top: .66667rem;
+    font-size: .42667rem;
+    color: #666;
+    text-align: center
+}
+
+.sydrisk-des-title {
+    padding-top: .29333rem;
+    padding-bottom: .73333rem;
+    font-size: .53333rem;
+    text-align: center
+}
+
+.sydrisk-img {
+    padding-bottom: 1.2rem;
+    text-align: center
+}
+
+.sydrisk-img>img {
+    width: 4.97333rem;
+    height: 4.4rem
+}
+
+.sydrisk-tip {
+    line-height: .42667rem;
+    padding-bottom: .21333rem;
+    font-size: .29333rem;
+    text-align: center;
+    color: #999
+}
+
+.sydrisk-tip>strong {
+    color: #ff6803
+}
+
+.sydrisk-btn {
+    padding: 0 .4rem;
+    text-align: center
+}
+
+.sydrisk-btn>a {
+    display: block;
+    height: 1.17333rem;
+    line-height: 1.17333rem;
+    font-size: .53333rem;
+    color: #fff;
+    border-radius: .16rem;
+    background-color: #53a0e3
+}
+
+.sydrisk-progress {
+    height: .13333rem;
+    background-color: #b7d7f3
+}
+
+.sydrisk-progress>span {
+    display: block;
+    height: .13333rem;
+    background-color: #006ac7
+}
+
+.sydrisk-h1>.mark,.sydrisk-h1>.mark>img {
+    height: .53333rem;
+    width: .53333rem
+}
+
+.sydrisk-h1 {
+    padding: .8rem .4rem .4rem;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #dedede
+}
+
+.sydrisk-h1>span {
+    display: block
+}
+
+.sydrisk-h1>.mark {
+    float: left
+}
+
+.sydrisk-h1 .copy {
+    line-height: .48rem;
+    padding-left: .8rem;
+    padding-top: .02667rem;
+    font-size: .42667rem
+}
+
+.sydrisk-list>span {
+    display: block;
+    height: 1.17333rem;
+    line-height: 1.17333rem;
+    padding-left: .4rem;
+    border-bottom: 1px solid #ececec;
+    background-color: #fff
+}
+
+.sydrisk-list>span>span {
+    display: block
+}
+
+.sydrisk-list .mark {
+    float: left;
+    width: .53333rem;
+    height: .53333rem;
+    padding-top: .32rem
+}
+
+.sydrisk-list .mark>img {
+    display: none;
+    width: .53333rem;
+    height: .53333rem;
+    vertical-align: top
+}
+
+.sydrisk-list .current {
+    background-color: #ececec
+}
+
+.sydrisk-list .current .mark>img {
+    display: block
+}
+
+.sydrisk-list .copy {
+    padding-left: .8rem;
+    font-size: .42667rem
+}
+
+.sydrisk-list .copywriter {
+    min-height: 1.65333rem;
+    padding-right: .8rem
+}
+
+.sydrisk-list .copywriter .copy {
+    line-height: .48rem;
+    padding-top: 0
+}
+
+.sydrisk-list .copywriter .mark {
+    padding-top: .56rem
+}
+
+.sydrisk-list .copywriter td {
+    height: 1.65333rem
+}
+
+.sydrisk-line {
+    height: 1px;
+    margin-top: -1px;
+    overflow: hidden;
+    background-color: #dedede
+}
+
+.sydrisk-point {
+    padding: .6rem 0 0
+}
+
+.sydrisk-point>a {
+    display: inline-block;
+    padding: .2rem .4rem;
+    font-size: .34667rem;
+    color: #006AC7
+}
+
+.sydrisk-spcing54 {
+    height: .72rem
+}
+
+.not-start .project-one-left,.project-one-left {
+    width: 1.13rem;
+    height: 1.13rem;
+    float: left;
+    margin-left: .8rem
+}
+
+.project-process {
+    border-bottom: 1px #dedede solid;
+    background-color: #fff;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem
+}
+
+.project-one {
+    clear: both;
+    overflow: hidden
+}
+
+.project-one-left {
+    border-radius: 50%;
+    border: .04rem solid #b7d7f3
+}
+
+.not-start .project-one-left {
+    border-radius: 50%;
+    border: .04rem solid #dedede
+}
+
+.project-one-left .pro-img {
+    width: .54rem;
+    height: .5rem
+}
+
+.project-one-left-img {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_ongoing_one.png) no-repeat;
+    background-size: contain;
+    margin-top: .28rem;
+    margin-left: .29rem
+}
+
+.project-one-left-img2 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_ongoing_two.png) no-repeat;
+    background-size: contain;
+    margin-top: .3rem;
+    margin-left: .33rem
+}
+
+.project-one-left-img3 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_ongoing_three.png) no-repeat;
+    background-size: contain;
+    margin-top: .3rem;
+    margin-left: .28rem
+}
+
+.project-one-left-img4 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_ongoing_fore.png) no-repeat;
+    background-size: contain;
+    margin-top: .35rem;
+    margin-left: .28rem
+}
+
+.project-one-left-img-v1 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_current_b.png) no-repeat;
+    background-size: contain;
+    margin-top: .33333rem;
+    margin-left: .29333rem
+}
+
+.project-one-left-img-v2 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_current_a.png) no-repeat;
+    background-size: contain;
+    margin-top: .29333rem;
+    margin-left: .26667rem
+}
+
+.not-start .project-one-left-img {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_notStart_one.png) no-repeat;
+    background-size: contain;
+    margin-top: .28rem;
+    margin-left: .29rem
+}
+
+.not-start .project-one-left-img2 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_notStart_two.png) no-repeat;
+    background-size: contain;
+    margin-top: .3rem;
+    margin-left: .33rem
+}
+
+.not-start .project-one-left-img3 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_notStart_three.png) no-repeat;
+    background-size: contain;
+    margin-top: .3rem;
+    margin-left: .28rem
+}
+
+.not-start .project-one-left-img4 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_notStart_fore.png) no-repeat;
+    background-size: contain;
+    margin-top: .35rem;
+    margin-left: .28rem
+}
+
+.not-start .project-one-left-img-v1 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_default_b.png) no-repeat;
+    background-size: contain;
+    margin-top: .33333rem;
+    margin-left: .29333rem
+}
+
+.not-start .project-one-left-img-v2 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_default_a.png) no-repeat;
+    background-size: contain;
+    margin-top: .29333rem;
+    margin-left: .26667rem
+}
+
+.project-one-left-img5 {
+    background: url(https://static.souyidai.com/wap/2.0/images/project_process/process_ongoing_five.png) no-repeat;
+    background-size: contain;
+    margin-top: .3rem;
+    margin-left: .31rem
+}
+
+.not-start .project-one-span,.project-one-span {
+    display: inline-block;
+    width: 0;
+    height: .93rem;
+    margin-left: -.6rem;
+    margin-top: 1.13rem;
+    float: left
+}
+
+.project-one-span {
+    border-left: .04rem solid #b7d7f3
+}
+
+.not-start .project-one-span {
+    border-left: .04rem solid #dedede
+}
+
+.project-one-right {
+    float: left;
+    margin-left: .4rem;
+    margin-top: .3rem
+}
+
+.project-one-right p {
+    margin: 0
+}
+
+.project-one-right .title-text {
+    font-size: .48rem;
+    color: #333;
+    margin-bottom: .2rem
+}
+
+.project-one-right .small-text {
+    font-size: .346rem;
+    color: #999
+}
+
+.small-text span {
+    color: #77b716
+}
+
+.not-start .small-text {
+    display: none
+}
+
+.not-start .project-one-right .title-text {
+    font-size: .48rem;
+    color: #999;
+    margin-bottom: .2rem
+}
+
+.sydnw-body {
+    background-color: #001e36
+}
+
+.sydnw-v1 img {
+    height: 6.93333rem
+}
+
+.sydnw-v2 {
+    height: 9.33333rem;
+    padding-top: .53333rem;
+    background: url(../images/novice-welfare/novice-2.jpg) left top no-repeat;
+    background-size: cover
+}
+
+.sydnw-div {
+    height: 2.13333rem;
+    padding-left: 2.61333rem;
+    color: #fff
+}
+
+.sydnw-div strong {
+    display: block;
+    padding: .02667rem 0 .21333rem;
+    font-size: .4rem;
+    font-weight: 400
+}
+
+.sydnw-div span {
+    display: block;
+    line-height: .53333rem;
+    font-size: .34667rem;
+    opacity: .5
+}
+
+.sydnw-div .fine-tune {
+    padding-top: .21333rem
+}
+
+.sydnw-v3 img {
+    height: .73333rem
+}
+
+.sydnw-v4 {
+    height: 10.02667rem;
+    padding-top: .53333rem;
+    background: url(../images/novice-welfare/novice-4.jpg) left top no-repeat;
+    background-size: cover
+}
+
+.syduw-prompt {
+    padding: .26667rem .53333rem 0;
+    color: #fff
+}
+
+.syduw-prompt>span:first-child {
+    display: block;
+    padding: 0 0 .36rem;
+    font-size: .4rem
+}
+
+.syduw-prompt .list {
+    opacity: .5
+}
+
+.syduw-prompt .list>span {
+    display: block;
+    line-height: .48rem;
+    font-size: .34667rem
+}
+
+.syduw-prompt .list>span::after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.syduw-prompt .list>span>span {
+    display: block;
+    padding-left: .37333rem
+}
+
+.syduw-prompt .list>span .pdleft {
+    padding-left: 0
+}
+
+.syduw-prompt .list strong {
+    display: block;
+    float: left;
+    width: .37333rem
+}
+
+.syduw-v5 {
+    height: 6.17333rem;
+    background: url(../images/novice-welfare/novice-5.jpg) left top no-repeat;
+    background-size: cover
+}
+
+.syduw-v5 .high {
+    height: 3.73333rem
+}
+
+.high-30 {
+    height: .4rem
+}
+
+.sydmodule-notes {
+    height: .8rem;
+    line-height: .8rem;
+    padding-left: .37333rem;
+    font-size: .32rem;
+    color: #666;
+    background-color: #fff
+}
+
+.sydmodule-notes .mark {
+    display: inline-block;
+    float: left;
+    width: .28rem;
+    height: .30667rem;
+    margin: .24rem .13333rem 0 0;
+    background: url(https://static.souyidai.com/wap/2.0/images//wechat/bao@2x.png);
+    background-size: cover
+}
+
+.jjs-bg {
+    width: 100%;
+    margin: 0 auto;
+    background: #211c1b;
+    font-size: .16rem
+}
+
+.jjs-introduce h2,.jjs-product h2 {
+    font-size: .50667rem;
+    text-align: center
+}
+
+.jjs-banner {
+    width: 100%;
+    height: 6.53333rem;
+    background: url(../images/jin_banner.jpg) left top no-repeat;
+    background-size: cover
+}
+
+.jjs-introduce {
+    width: 100%;
+    height: 6.24rem;
+    padding: 0 .66667rem;
+    margin-bottom: .4rem
+}
+
+.jjs-introduce h2 {
+    height: .77333rem;
+    padding-bottom: .53333rem;
+    background: url(../images/title_bg_04.png) 3.02667rem center no-repeat;
+    background-size: 2.61333rem .74667rem
+}
+
+.jjs-introduce p {
+    color: #a5835c;
+    line-height: .64rem
+}
+
+.jjs-product {
+    width: 100%;
+    height: 8.8rem;
+    padding: 0 .66667rem
+}
+
+.jjs-product ul {
+    padding: 0;
+    list-style: none
+}
+
+.jjs-product h2 {
+    height: .77333rem;
+    padding-bottom: .53333rem;
+    background: url(../images/title_bg_07.png) 3.02667rem center no-repeat;
+    background-size: 2.61333rem .74667rem
+}
+
+.product_box li {
+    list-style: none;
+    width: 100%;
+    height: 1.33333rem;
+    margin-bottom: .53333rem
+}
+
+.product_box li dl {
+    width: 100%;
+    height: 1.33333rem
+}
+
+.product_box li dt {
+    float: left;
+    width: 1.33333rem;
+    height: 1.33333rem
+}
+
+.product_box li dt img {
+    display: block;
+    width: 1.33333rem;
+    height: 1.33333rem
+}
+
+.product_box li dd {
+    width: 6.77333rem;
+    margin-left: 1.81333rem;
+    color: #a5835c;
+    line-height: .48rem
+}
+
+.invest-btn {
+    width: 100%;
+    height: 1.06667rem;
+    padding: 0 .66667rem;
+    margin-bottom: 1.4rem
+}
+
+.invest-btn button {
+    display: block;
+    width: 8.66667rem;
+    height: 1.06667rem;
+    background: #b19370;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: .42667rem;
+    outline: 0
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.xmj-investing .investing-imgs {
+    width: 4.29333rem;
+    height: 3.90667rem;
+    background: url(../images/xmj-investing.png) no-repeat;
+    background-size: contain;
+    margin: 1.33333rem auto .66667rem
+}
+
+.xmj-investing p {
+    text-align: center
+}
+
+.xmj-investing .investing-p1 {
+    font-size: .48rem
+}
+
+.xmj-investing .investing-p2 {
+    font-size: .34667rem
+}
+
+.xmj-investing .investing-p2 span {
+    color: #ff6803;
+    line-height: .7rem
+}
+
+.xmj-investing .investing-p3 {
+    font-size: .29333rem;
+    color: #999;
+    margin-top: .53333rem
+}
+
+.cf:after,.cf:before {
+    content: " ";
+    display: table
+}
+
+.cf:after {
+    clear: both
+}
+
+.cf {
+    zoom:1}
+
+.lt {
+    float: left
+}
+
+.guide_wrap .top_bg {
+    width: 100%;
+    height: 6.133rem;
+    background: url(https://static.souyidai.com/wap/2.0/images/borrow/banner.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.guide_wrap .top_a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    height: 1rem
+}
+
+.guide_wrap .register {
+    margin: -1.6rem .4rem .466rem;
+    background-color: #fff;
+    padding-bottom: .4rem;
+    border-radius: .3rem;
+    box-shadow: 0 4px 8px 0 #ebebeb
+}
+
+.guide_wrap .register-title {
+    text-align: center;
+    font-size: .453rem;
+    color: #333;
+    font-weight: 700;
+    line-height: .5rem;
+    padding: .53rem 0 .1rem
+}
+
+.guide_wrap .register-des {
+    text-align: center;
+    font-size: .24rem;
+    color: #999;
+    line-height: .4rem
+}
+
+.guide_wrap .reg_input {
+    position: relative;
+    border-radius: .16rem;
+    border: 1px solid #dedede;
+    margin: 0 auto;
+    width: 8.29rem;
+    height: 1.173rem;
+    overflow: hidden
+}
+
+.guide_wrap .reg_input.error {
+    border-color: #ff6803
+}
+
+.guide_wrap .img-code {
+    position: relative;
+    margin: .3rem auto 0;
+    width: 8.29rem
+}
+
+.guide_wrap .img-code .reg_input {
+    width: 5.866rem;
+    float: left;
+    margin-top: 0
+}
+
+.guide_wrap .reg_input {
+    margin-top: .3rem
+}
+
+.guide_wrap .icon-bac {
+    float: left;
+    background-color: #fafafa;
+    height: 1.173rem;
+    width: 1.173rem;
+    border-right: 1px #dedede solid;
+    padding: .33rem .3rem
+}
+
+.guide_wrap .icon {
+    display: inline-block;
+    width: .53rem;
+    height: .53rem;
+    margin-right: .17rem;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.guide_wrap .icon-phone {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/borrow/icon6.png)
+}
+
+.guide_wrap .icon-name {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/borrow/icon5.png)
+}
+
+.guide_wrap .icon-city {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/borrow/icon8.png)
+}
+
+.guide_wrap .icon-type {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/borrow/type.png)
+}
+
+.guide_wrap .icon-image {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/borrow/icon9.png)
+}
+
+.guide_wrap .icon-message {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/borrow/icon7.png)
+}
+
+.guide_wrap .icon-caret {
+    background-image: url(https://static.souyidai.com/wap/2.0/images/borrow/caret.png);
+    margin-right: .3rem;
+    width: .28rem;
+    float: right;
+    margin-top: .46rem
+}
+
+.guide_wrap .kaptcha-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.26rem;
+    height: 1.173rem;
+    border-radius: .16rem;
+    overflow: hidden
+}
+
+.guide_wrap #send-sms {
+    border-left: 1px solid #c2c2c2;
+    padding-left: .2rem;
+    color: #53a0e3;
+    font-size: .4rem;
+    text-decoration: none;
+    margin-top: -.25rem;
+    height: .53rem;
+    line-height: .53rem;
+    position: absolute;
+    right: .2rem;
+    top: 50%
+}
+
+.guide_wrap #send-sms.btn-disabled {
+    color: #999
+}
+
+.guide_wrap .select-placeholder {
+    color: #c2c2c2!important
+}
+
+.guide_wrap .reg_input input,.guide_wrap .reg_input select {
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: .4rem;
+    height: .53rem;
+    line-height: .53rem;
+    padding-left: .27rem;
+    color: #333;
+    vertical-align: middle;
+    width: 80%;
+    margin-top: .28rem
+}
+
+.guide_wrap .reg_input select {
+    -webkit-appearance: none;
+    background-color: #fff;
+    width: 76%
+}
+
+.guide_wrap #code {
+    width: 60%
+}
+
+.guide_wrap ::-webkit-input-placeholder {
+    color: #c2c2c2
+}
+
+.guide_wrap :-moz-placeholder {
+    color: #c2c2c2
+}
+
+.guide_wrap ::-moz-placeholder {
+    color: #c2c2c2
+}
+
+.guide_wrap :-ms-input-placeholder {
+    color: #c2c2c2
+}
+
+.guide_wrap .btn-box {
+    margin-top: .466rem
+}
+
+.guide_wrap .btn-box .btn {
+    margin: 0;
+    background-color: #ff8835;
+    color: #fff
+}
+
+.guide_wrap .icon-success {
+    width: 1.33rem;
+    margin-top: .8rem
+}
+
+.guide_wrap .dialog-simple-header {
+    margin: .2rem 0!important
+}
+
+.guide_wrap .error-text {
+    color: #ff6803;
+    text-align: center;
+    font-size: .32rem;
+    line-height: .5rem;
+    margin-top: .1rem;
+    height: .5rem
+}
+
+.guide_wrap .free-phone {
+    display: table;
+    margin: 0 auto;
+    font-size: .32rem;
+    color: #666;
+    line-height: .4rem
+}
+
+.guide_wrap .free-phone>em {
+    width: .32rem;
+    height: .32rem;
+    background: url(https://static.souyidai.com/wap/2.0/images/borrow/phone2.png);
+    background-size: contain;
+    display: block;
+    float: left;
+    margin: .05rem .1rem 0 0
+}
+
+.guide_wrap .free-phone>p {
+    float: left
+}
+
+.guide_wrap .product-borrow {
+    width: 9.213rem;
+    height: 7rem;
+    background: url(https://static.souyidai.com/wap/2.0/images/borrow/product.png) no-repeat;
+    background-size: contain;
+    margin: .53rem auto
+}
+
+.guide_wrap .process-borrow {
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: .8rem
+}
+
+.guide_wrap .borrow-detail {
+    width: 2rem
+}
+
+.guide_wrap .borrow-title {
+    font-size: .4rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem
+}
+
+.guide_wrap .borrow-title2 {
+    font-size: .346rem;
+    color: #ff781a;
+    text-align: center;
+    line-height: 1rem;
+    margin-top: .2rem
+}
+
+.guide_wrap .borrow-rate {
+    font-size: 1.06rem;
+    color: #ff781a;
+    text-align: center;
+    line-height: .8rem;
+    font-family: Arial,Helvetica;
+    font-weight: 700
+}
+
+.guide_wrap .borrow-rate span {
+    font-size: .4rem
+}
+
+.guide_wrap .borrow-list {
+    width: 6.533rem;
+    margin: .4rem auto 0
+}
+
+.guide_wrap .borrow-first em {
+    width: .29rem;
+    height: .29rem;
+    display: block;
+    float: left;
+    background: url(https://static.souyidai.com/wap/2.0/images/borrow/icon1.png) no-repeat;
+    background-size: contain;
+    margin: .05rem .1rem 0 0
+}
+
+.guide_wrap .borrow-first .icon2 {
+    background: url(https://static.souyidai.com/wap/2.0/images/borrow/icon2.png) no-repeat;
+    background-size: contain;
+    margin: .07rem .1rem 0 0
+}
+
+.guide_wrap .borrow-first .icon3 {
+    background: url(https://static.souyidai.com/wap/2.0/images/borrow/icon3.png) no-repeat;
+    background-size: contain;
+    margin: .1rem .1rem 0 0
+}
+
+.guide_wrap .borrow-first .icon4 {
+    background: url(https://static.souyidai.com/wap/2.0/images/borrow/icon4.png) no-repeat;
+    background-size: contain
+}
+
+.guide_wrap .borrow-first p {
+    font-size: .293rem;
+    color: #999;
+    line-height: .4rem
+}
+
+.guide_wrap .borrow-second {
+    font-size: .48rem;
+    color: #333;
+    line-height: .5rem;
+    margin-top: .1rem
+}
+
+.guide_wrap .borrow-second span {
+    font-size: .32rem
+}
+
+.guide_wrap .process-borrow>img {
+    width: 9rem;
+    margin: 0 auto;
+    display: block
+}
