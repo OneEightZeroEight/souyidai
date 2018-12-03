@@ -1,10 +1,10 @@
 @charset "UTF-8";.btn,body {
-    -webkit-user-select: none
+    -webkit-user-select: none;
 }
 
-a:active,a:hover,body {
-    outline: 0
-}
+/* a:active,a:hover,body {
+    outline: 0;
+} */
 
 *,:after,:before {
     box-sizing: border-box
