@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-	
+
+
+import 'antd/dist/antd.css'; 	
 import './styles/index.css';
 import './styles/main01.css';
 // import './styles/main.css';

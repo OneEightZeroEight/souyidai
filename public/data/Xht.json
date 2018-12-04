@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "accountType": 1,
+            "amount": 189000000,
+            "assetMode": 0,
+            "canBidAmount": 36600000,
+            "detailTitle": "慧投271天D182710924",
+            "detailUrl": "https://m.huli.com/1.1/bid/detail/3840713585935/dqb",
+            "fedPrdType": 0,
+            "id": 3345713585935,
+            "idStr": "5567935705015",
+            "interestRate": 830,
+            "interestType": "参考年化结算利率",
+            "isFixedRepay": 0,
+            "isSeckill": 0,
+            "isSelfTransfer": 0,
+            "isTransfer": 0,
+            "isapp": 0,
+            "isfresh": 0,
+            "loanType": 0,
+            "percent": 8064,
+            "periods": "271天",
+            "principalDiscountRate": 0,
+            "productType": "dqb",
+            "raiseInterestRate": 0,
+            "realStatus": 11,
+            "remainingAmounts": 0,
+            "repayMode": "一次结清",
+            "repayModeInt": 0,
+            "status": 1,
+            "statusText": "抢",
+            "subType": 0,
+            "title": "慧投271天D182710924",
+            "transRule": 0,
+            "ztbPayAnyTime": 0
+        }
+    ],
+    "errorCode": 0
+}
