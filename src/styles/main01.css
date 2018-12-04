@@ -1,3 +1,6 @@
+.zhanwei{
+	height: 43px;
+}
 .arrow-close[data-v-2a66d7e6] {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAJhJREFUSA3tkzEKgDAMRT2Bk+Civf9RnAVHvUp9fwg41RTNlsAnFJK+9JMOQ0Y6kA6kA+lAmAO11oLmXgA9I1q6+mhY0YUO5IZSK9iGTrS6oRRPaEcKF5Q6g6lHwxY3UIU0uKHUfoPZZB7obzAP9HdYCxoGa0C1jYr+BbFL3zKXPxcpFmbDQLE/Gvcyg1kGWiQ7Z04HQh24AZWXIOqo2zhlAAAAAElFTkSuQmCC);
     background-size: cover
@@ -3925,7 +3928,7 @@ input:disabled,textarea:disabled {
 }
 
 .huli-regist-banner .huli-banner.huli-banner6 {
-    background: url(/static/3a85a4ad364152b7fabecde50b0293ed.png) no-repeat;
+    background: url(https://m.souyidai.com/static/3a85a4ad364152b7fabecde50b0293ed.png) no-repeat;
     background-size: 100% 100%
 }
 
@@ -4881,7 +4884,7 @@ input:disabled,textarea:disabled {
     height: 2.32rem;
     width: 100%;
     text-align: center;
-    padding-top: .53333333rem
+    padding-top: .53333333rem;
 }
 
 .footer-ICP p {
@@ -4889,7 +4892,7 @@ input:disabled,textarea:disabled {
     line-height: .37333333rem;
     font-size: .26666667rem;
     color: #c6c6c6;
-    font-family: PingFangSC-Regular
+    font-family: PingFangSC-Regular;
 }
 
 .bt-nav {
