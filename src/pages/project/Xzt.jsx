@@ -1,6 +1,7 @@
 import React from 'react'
 import Axios from 'axios'
 import { Progress } from 'antd';
+import {connect} from 'react-redux'
 class Xzt extends React.Component {
     constructor(props){
         super(props);
@@ -26,8 +27,9 @@ class Xzt extends React.Component {
     }
     componentDidMount(){
         this.getListInfo();
-        console.log(this.props)
-        console.log(this.props.location.pathname)
+        this.props. changeIndex(0); //路由控制Nav切换
+        // console.log(this.props)
+        // console.log(this.props.location.pathname)
       
     }
     render() {
@@ -106,4 +108,18 @@ class Xzt extends React.Component {
     }
 
 }
-export default Xzt
+export default connect((state) => {
+    console.log(state)
+    return state
+  },(dispatch) => {
+    return {
+          changeIndex(idx){
+            console.log(idx)
+            dispatch({
+              type : 'toggleNavIndex',
+              index : idx
+            })
+        }
+    }
+  })(Xzt);
+  

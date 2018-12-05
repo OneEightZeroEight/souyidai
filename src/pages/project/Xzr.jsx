@@ -1,6 +1,7 @@
 import React from 'react'
 import Axios from 'axios'
 import { Progress } from 'antd';
+import {connect} from 'react-redux'
 class Xzr extends React.Component {
     constructor(props){
         super(props);
@@ -25,6 +26,7 @@ class Xzr extends React.Component {
     }
     componentDidMount(){
         this.getListInfo();
+        this.props. changeIndex(2); //路由变化控制Nav切换
     }
     render() {
         return (  
@@ -98,4 +100,17 @@ class Xzr extends React.Component {
     }
 
 }
-export default Xzr
+export default connect((state) => {
+    console.log(state)
+    return state
+  },(dispatch) => {
+    return {
+          changeIndex(idx){
+            console.log(idx)
+            dispatch({
+              type : 'toggleNavIndex',
+              index : idx
+            })
+        }
+    }
+  })(Xzr);

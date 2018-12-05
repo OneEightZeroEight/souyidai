@@ -41,7 +41,8 @@ class Xlist extends React.Component {
         })
     }
     componentDidMount(){
-        this.getListInfo();
+        // this.getListInfo();
+        
     }
     render() {
         return (

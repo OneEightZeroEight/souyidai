@@ -1,6 +1,7 @@
 import React from 'react'
 import Axios from 'axios'
 import { Progress } from 'antd';
+import {connect} from 'react-redux'
 class Xht extends React.Component {
     constructor(props){
         super(props);
@@ -25,6 +26,7 @@ class Xht extends React.Component {
     }
     componentDidMount(){
         this.getListInfo();
+        this.props. changeIndex(1); //路由变化控制Nav切换
     }
     render() {
         return (          
@@ -97,4 +99,17 @@ class Xht extends React.Component {
     }
 
 }
-export default Xht
+export default connect((state) => {
+    console.log(state)
+    return state
+  },(dispatch) => {
+    return {
+          changeIndex(idx){
+            console.log(idx)
+            dispatch({
+              type : 'toggleNavIndex',
+              index : idx
+            })
+        }
+    }
+  })(Xht);
