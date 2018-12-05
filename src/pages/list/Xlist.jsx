@@ -3,6 +3,7 @@ import Axios from 'axios'
 // import Xzt from './Xzt.jsx'  
 // import Xht from './Xht.jsx'
 import Xzr from './Xzr.jsx'
+
 class Xlist extends React.Component {
     constructor(props){
         super(props);
@@ -39,6 +40,7 @@ class Xlist extends React.Component {
                 {/* <Xzt></Xzt> */}
                 {/* <Xht></Xht> */}
                 <Xzr></Xzr>
+                
 
             </div>
         )
