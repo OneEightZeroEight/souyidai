@@ -6,6 +6,7 @@
     "antd": "^3.11.0",
     "axios": "^0.18.0",
     "element-ui": "^2.4.11",
+
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.1",
@@ -29,6 +30,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "css-loader": "^1.0.1"
+    "antd": "^3.11.0",
+    "babel-plugin-import": "^1.11.0",
+    "css-loader": "^1.0.1",
+    "react-redux": "^5.1.1"
   }
 }

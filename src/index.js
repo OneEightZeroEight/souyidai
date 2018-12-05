@@ -5,6 +5,7 @@ import { HashRouter as Router} from "react-router-dom";
 	
 import './styles/index.css';
 import './styles/main01.css';
+
 // 状态管理 配置store的
 import { createStore } from 'redux'
 // 把上面配置好的store和react进行关联
@@ -14,7 +15,8 @@ import App from './App';
 import * as serviceWorker from './lib/serviceWorker';
 
 const store = createStore((state = {
-   listNavIndex : 0
+   listNavIndex : 0,
+	 phone:''
 
 }, action) => {
     switch (action.type) {
@@ -28,6 +30,11 @@ const store = createStore((state = {
                 ...state,
                 isShowGallery:action.isShowGallery
             }
+				case 'chuancan':
+						return {
+								...state,
+								phone:action.phone
+						}
         default:
             return state
     }
@@ -43,6 +50,7 @@ ReactDOM.render(
 			<App></App>
 		</Router>
 	</Provider>
+
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
