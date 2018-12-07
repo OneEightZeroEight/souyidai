@@ -2,6 +2,9 @@ import React from 'react'
 import Axios from 'axios'
 import { Progress } from 'antd';
 import {connect} from 'react-redux'
+var querystring = require('querystring');
+
+
 class Xzt extends React.Component {
     constructor(props){
         super(props);
@@ -12,10 +15,25 @@ class Xzt extends React.Component {
            
         }
     }
+    godetail(id,title,type,amount){
+        // console.log(id,title)
+        var data = {id:id ,title:title,type:type,amount:amount};
+        this.props.history.push('/detail');
+        this.props.changeXq(data);
+
+        
+        
+    }
     getListInfo(){
-        Axios.get('./data/list.json')
+        //两种解决本办法axios.post+qs模块解析(直接得到) 或者 服务器request.post去拿返回(间接得到) 要设置跨域
+    //    ' http://localhost:3003/list/getzt'
+        // Axios.get('http://localhost:3003/list/getzt')
+        Axios.post('https://m.souyidai.com/wap/1.6/bid/hulilist', querystring.stringify({huliProductType:'P2P',
+        subIndex: 'ztb',
+        pageNo: 1,
+        orderBy: 'DEFAULT'}))
         .then((res)=>{
-            console.log(res.data.data);
+            // console.log(res.data.data);
             this.setState({
                 arr : res.data.data 
              
@@ -65,7 +83,7 @@ class Xzt extends React.Component {
 
                                         html=this.state.arr.map((item,index)=>{
                                             return (
-                                                <li data-v-0754464a="" className="btLine" style={{marginTop:'0.26rem'}} key={index}>
+                                                <li data-v-0754464a="" className="btLine" style={{marginTop:'0.26rem'}} key={index} onClick={this.godetail.bind(this,item.id,item.title,item.productType,item.amount)}>
                                     <div data-v-0754464a="" className="title" >
                                         <h2 data-v-0754464a="" className="name">{item.detailTitle}</h2>
                                         <p data-v-0754464a="" className="btline-rt" style={{display:item.canBidAmount==0?"none":"block"}}>可投{(item.canBidAmount/100).toFixed(2)}元</p>
@@ -109,15 +127,21 @@ class Xzt extends React.Component {
 
 }
 export default connect((state) => {
-    console.log(state)
+    // console.log(state)
     return state
   },(dispatch) => {
     return {
           changeIndex(idx){
-            console.log(idx)
+            // console.log(idx)
             dispatch({
               type : 'toggleNavIndex',
               index : idx
+            })
+        },
+        changeXq(data){
+            dispatch({
+                type : 'changeXq',
+                obj : data
             })
         }
     }

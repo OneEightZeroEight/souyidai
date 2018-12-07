@@ -5,6 +5,7 @@ import Xht from './Xht.jsx'
 import Xzr from './Xzr.jsx'
 import { Route,Link} from "react-router-dom";
 import {connect} from 'react-redux'
+import Dibu from '../../components/Dibu.jsx'
 
 class Xlist extends React.Component {
     constructor(props){
@@ -30,7 +31,7 @@ class Xlist extends React.Component {
     getListInfo(){
         Axios.get('./data/list.json')
         .then((res)=>{
-            console.log(res.data.data);
+            // console.log(res.data.data);
             this.setState({
                 arr : res.data.data 
              
@@ -46,7 +47,7 @@ class Xlist extends React.Component {
     }
     render() {
         return (
-            <div className="foxM-invest-form" style={{marginBottom:'1.4rem'}}>
+            <div className="foxM-invest-form" >
                 <ul className="fina-tabs column-3">
                 {
 						(()=>{
@@ -71,14 +72,15 @@ class Xlist extends React.Component {
                   <Route path="/project/xht" component={Xht} />
                   <Route path="/project/xzr" component={Xzr} />
     
-  
+                    <Dibu></Dibu>
             </div>
+            
         )
     }
 
 }
 export default connect((state) => {
-  console.log(state)
+//   console.log(state)
   return state
 },(dispatch) => {
   return {

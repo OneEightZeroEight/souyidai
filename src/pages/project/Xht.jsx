@@ -2,6 +2,7 @@ import React from 'react'
 import Axios from 'axios'
 import { Progress } from 'antd';
 import {connect} from 'react-redux'
+var querystring = require('querystring');
 class Xht extends React.Component {
     constructor(props){
         super(props);
@@ -11,10 +12,22 @@ class Xht extends React.Component {
            
         }
     }
+    godetail(id,title,type,amount){
+        // console.log(id,title)
+        var data = {id:id ,title:title,type:type,amount:amount};
+        this.props.history.push('/detail');
+        this.props.changeXq(data);
+
+        
+        
+    }
     getListInfo(){
-        Axios.get('./data/Xht.json')
+        Axios.post('https://m.souyidai.com/wap/1.6/bid/hulilist', querystring.stringify({huliProductType:'P2P',
+        subIndex: 'dqb',
+        pageNo: 1,
+        orderBy: 'DEFAULT'}))
         .then((res)=>{
-            console.log(res.data.data);
+            // console.log(res.data.data);
             this.setState({
                 arr : res.data.data 
              
@@ -53,11 +66,18 @@ class Xht extends React.Component {
                     {
                                     (()=>{
                                         let html = [];
-                                        if(this.state.arr.length==0){return};
+                                        if(this.state.arr.length==0){return(
+                                        
+                                                <div className="clearInfo">
+                                                <p>更多优质项目,敬请期待</p>
+                                                </div>
+                                               
+                          
+                                        )};
 
                                         html=this.state.arr.map((item,index)=>{
                                             return (
-                                                <li data-v-0754464a="" className="btLine" style={{marginTop:'0.26rem'}} key={index}>
+                                                <li data-v-0754464a="" className="btLine" style={{marginTop:'0.26rem'}} key={index} onClick={this.godetail.bind(this,item.id,item.title,item.productType,item.amount)}>
                                     <div data-v-0754464a="" className="title" style={{display:"flex",justifyContent:'space-between',height:'0.93rem',lineHeight:'0.93rem',fontSize:'0.32rem',color:'#666',marginTop:'-0.3rem',borderBottom:'1px solid  #efefef'}} >
                                         <h2 data-v-0754464a="" className="name">{item.detailTitle}</h2>
                                         <p data-v-0754464a="" className="btline-rt" style={{display:item.canBidAmount==0?"none":"block"}}>可投{(item.canBidAmount/100).toFixed(2)}元</p>
@@ -99,16 +119,23 @@ class Xht extends React.Component {
     }
 
 }
-export default connect((state) => {
-    console.log(state)
+
+  export default connect((state) => {
+    // console.log(state)
     return state
   },(dispatch) => {
     return {
           changeIndex(idx){
-            console.log(idx)
+            // console.log(idx)
             dispatch({
               type : 'toggleNavIndex',
               index : idx
+            })
+        },
+        changeXq(data){
+            dispatch({
+                type : 'changeXq',
+                obj : data
             })
         }
     }
