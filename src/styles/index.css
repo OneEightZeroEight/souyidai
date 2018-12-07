@@ -13,6 +13,7 @@ code {
     monospace;
 }
 
+
 .ant-progress-circle .ant-progress-text{
   color: orange;
   font-size: 0.5rem;
@@ -23,13 +24,13 @@ code {
 .tctipsbox{
   box-sizing: border-box;
   width:8rem;
-  height: 3.6rem;
+  height: 4rem;
   background: #fff;
   position: absolute;
   top:50%;
   left:50%;
   margin-left: -4rem;
-  margin-top: -1.8rem;
+  margin-top: -2rem;
   border-radius:.2rem;
   padding:0.5rem;
   padding-bottom: 0;
@@ -58,4 +59,18 @@ code {
   height: 1.3rem;
   line-height: 1.3rem;
   color:skyblue;
+}
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+.section{
+    background: #fff;
 }

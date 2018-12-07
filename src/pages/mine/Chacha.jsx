@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter   } from 'react-router-dom'
 
 class Chacha extends Component {
 	constructor(props){
@@ -9,17 +10,18 @@ class Chacha extends Component {
 		}
 	}
 	fangfa(){
+		this.props.history.push('/home')
 		console.log(666)
 	}
   render() {
 		return (
 			<div className="chacha">
 					<header className="foxM-login">
-						<i onClick={this.fangfa.bind()} className="icon-gray-close"></i>
+						<i onClick={this.fangfa.bind(this)} className="icon-gray-close"></i>
 					</header>
 			</div>
 		);
   }
 }
 
-export default Chacha;
+export default withRouter(Chacha);

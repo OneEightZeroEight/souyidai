@@ -23,8 +23,6 @@ class Xlist extends React.Component {
               title:"转让项目",
               href:"/project/xzr",
             }]
-         
-           
         }
     }
    

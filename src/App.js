@@ -6,6 +6,8 @@ import Project from './pages/project/Project.jsx';
 import Detail from './pages/detail/Xdetail.jsx';
 import Calc from './pages/calc/Xcalc.jsx';
 
+import Zhuce from './components/zhuce/Zhuce.jsx';
+import Info from './components/zhuce/Info.jsx';
 
 class App extends Component {
   render() {
@@ -17,6 +19,8 @@ class App extends Component {
 					<Route path="/mine/" component={Mine} />
 					<Route path="/detail/" component={Detail} />
 					<Route path="/calc" component={Calc} />
+					<Route path="/zhuce/" component={Zhuce} />
+					<Route path="/info/" component={Info} />
 					<Redirect from='/' to='/home' />
 				</Switch>		
       </div>
