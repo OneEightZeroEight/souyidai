@@ -40,7 +40,7 @@ class Xlist extends React.Component {
         })
     }
     componentDidMount(){
-        // this.getListInfo();
+        this.props.navigateTo(1); 
         
     }
     render() {
@@ -88,6 +88,13 @@ export default connect((state) => {
             type : 'toggleNavIndex',
             index : idx
           })
-      }
+      },
+			navigateTo(index){
+				dispatch({
+					type:"navigateTo",
+					nav:index
+				})
+			}
+			
   }
 })(Xlist);

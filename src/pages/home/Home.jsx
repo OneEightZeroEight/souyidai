@@ -9,8 +9,18 @@ import Advantages from './Advantage.jsx';
 import About from './About.jsx';
 import Footer from './Footer.jsx';
 import Zhanwei from './zhanwei.jsx';
-
+import {connect} from 'react-redux';
 class Home extends Component {
+	constructor(props){
+			super(props);
+			this.props = props;
+			this.state = {
+				
+			}
+	}
+	componentDidMount(){
+			this.props.navigateTo(0); 
+	}
   render() {
     return (
 		<div className="home">
@@ -28,4 +38,17 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default connect((state) => {
+		//获取到仓库的state
+		return state
+	},(dispatch) => {
+		//用dispatch触发仓库中的action
+		return {
+			navigateTo(index){
+				dispatch({
+					type:"navigateTo",
+					nav:index
+				})
+			}
+		}
+	})(Home)

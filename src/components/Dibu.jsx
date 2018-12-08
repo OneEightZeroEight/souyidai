@@ -25,9 +25,6 @@ class Dibu extends Component {
 		}
 	}
 	
-	navigateTo(index,e){
-		this.props.navigateTos(index);
-	}
   render() {
     return (
       <div className="dibu">
@@ -39,9 +36,10 @@ class Dibu extends Component {
 										return (
 											<Link to={{pathname:item.href}} replace key={index}>
 												<li
-												onClick={this.navigateTo.bind(this,index)}
+												onClick={this.props.navigateTo.bind(this,index)}
 												className={item.classna}
-												className={index == this.props.nav?"active":""}>
+												className={index === this.props.nav?"active":""}
+												key={index}>
 													<i className={item.tubiao}></i>
 													<span>{item.title}</span>
 												</li>
@@ -63,10 +61,9 @@ export default connect((state) => {
 	},(dispatch) => {
 		//用dispatch触发仓库中的action
 		return {
-			navigateTos(index){
-				localStorage.setItem("nav",index)
+			navigateTo(index){
 				dispatch({
-					type:"navigateTos",
+					type:"navigateTo",
 					nav:index
 				})
 			}

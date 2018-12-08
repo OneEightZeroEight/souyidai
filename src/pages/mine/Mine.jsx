@@ -17,7 +17,9 @@ class Mine extends Component {
 		this.state = {
 			
 		}
-		
+	}
+	componentDidMount(){
+			this.props.navigateTo(2); 
 	}
   render() {
 		return (
@@ -57,6 +59,11 @@ export default connect((state) => {
 	},(dispatch) => {
 		//用dispatch触发仓库中的action
 		return {
-			
+			navigateTo(index){
+				dispatch({
+					type:"navigateTo",
+					nav:index
+				})
+			}
 		}
 	})(Mine);
