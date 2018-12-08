@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import { withRouter   } from 'react-router-dom'
+import {connect} from 'react-redux';
+import $ from 'jquery';
+import axios from 'axios';
 class Login extends Component {
 	constructor(props){
 		super(props)
 		this.props = props;
 		this.state = {
+			cishu:0,
+			lefu:true,
 			yanjing:true,
-			zhanghao:true,
-			zhanghaos:15078908061,
-			mima:123123
+			zhanghao:'wu',
+			chuans:'2'
 		}
 	}
 	yanjing(){
@@ -19,30 +23,82 @@ class Login extends Component {
 	denglu(){
 		var zhanghao = this.refs.zhanghao.value;
 		var mimas = this.refs.mimas.value;
-		if(zhanghao != this.state.zhanghaos){
+		this.haoma();
+		if(zhanghao == ''){
 			this.setState({
-				zhanghao:false
+				zhanghao:'cuowu'
 			})
 			return;
 			
-		}else if(zhanghao == this.state.zhanghaos){
-			this.setState({
-				zhanghao:true
-			})
-			if(mimas != this.state.mima){
+		}else if(zhanghao != ''){
+			if(this.state.chuans == '1'){
 				this.setState({
-					zhanghao:false
+					zhanghao:'mima'
 				})
+				this.state.cishu+=1;
+				if(this.state.cishu>=4){
+					this.setState({
+						zhanghao:'zhaohui',
+						lefu:false
+					})
+					return;
+				}
 				return;
 				
-			}else if(mimas == this.state.mima){
+			}
+			if(this.state.chuans == '-1'){
+				this.setState({
+					zhanghao:'meiyou'
+				})
+				return;
+			}
+			if(this.state.chuans == '0'){
+				this.props.chuancans();
+				localStorage.setItem("phone",zhanghao);
 				this.props.history.push('/home')
+				console.log(666)
 			}
 			
 		}else{
 			return;
 		}
 	}
+	kong(){
+		this.refs.mimas.value="";
+	}
+	haoma(){
+		var zhanghao = this.refs.zhanghao.value;
+		var mimas = this.refs.mimas.value;
+		var rootPath = 'http://localhost:4000'
+		var url=rootPath+'/Login/dengluGoods';
+		var data = {
+			phone:zhanghao,
+			name:mimas
+		}
+		$.post(url,data,(res) => {
+			if(res.err == 0){
+				this.setState({
+					chuans: '0'
+				})
+				console.log(res.err,"密码匹配")
+				console.log(this.state.chuans)
+			}else if(res.err == 1){
+				this.setState({
+					chuans: '1'
+				})
+				console.log(res.err,"密码不匹配")
+				console.log(this.state.chuans)
+			}else if(res.err == -1){
+				this.setState({
+					chuans: '-1'
+				})
+				console.log(res.err,"没有此账号")
+				console.log(this.state.chuans)
+			}
+			
+		})
+	}
+	
   render() {
 		return (
 			<div  className="section login">
@@ -56,7 +112,7 @@ class Login extends Component {
 						ref="zhanghao"/>
 					</li>
 					<li  className="btLine userPwd"><input  type={this.state.yanjing?"password":"test"} ref="mimas" placeholder="登录密码" id="loginPwd" />
-						<i  className="icon-clear"></i> <i onClick={this.yanjing.bind(this)} className={this.state.yanjing?"icon-close-eye":"icon-open-eye"}></i></li>
+						<i onClick={this.kong.bind(this)} className="icon-clear"></i> <i onClick={this.yanjing.bind(this)} className={this.state.yanjing?"icon-close-eye":"icon-open-eye"}></i></li>
 					<li  className="input-code-Box" style={{display: "none"}}>
 						<div  className="input-code remove">
 							<div  id="kaptcha" className="btLine kaptcha"><input  type="text" placeholder="请输入验证码" />
@@ -69,13 +125,26 @@ class Login extends Component {
 					<li className="promptText">
 						{
 							(()=> {
-								if(this.state.zhanghao === true){
+								if(this.state.zhanghao == 'wu'){
 									return (
 										<p>&nbsp;</p>
 									)
-								}else if(this.state.zhanghao === false){
+								}else if(this.state.zhanghao == 'cuowu'){
 									return (
 										<p style={{color: "#ff5757"}}>用户名或者密码错误 </p>
+									)
+								}else if(this.state.zhanghao == 'mima'){
+									return (
+										<p style={{color: "#ff5757"}}>密码错误 <span style={{color: "#ff5757"}}>你还有{4-this.state.cishu}次机会 </span></p>
+										
+									)
+								}else if(this.state.zhanghao == 'zhaohui'){
+									return (
+										<p style={{color: "#ff5757"}}>如您密码丢失请找回 </p>
+									)
+								}else if(this.state.zhanghao == 'meiyou'){
+									return (
+										<p style={{color: "#ff5757"}}>账号不存在 </p>
 									)
 								}else{console.log("Login,this.state.zhanghaos取值无效")}
 							})()
@@ -84,7 +153,7 @@ class Login extends Component {
 					</li>
 				</ul>
 				<div  className="btn-sure">
-					<a onClick={this.denglu.bind(this)}
+					<a className={this.state.lefu?"":"disable"} onClick={this.denglu.bind(this)}
 					href="javascript:;">登录</a>
 				</div>
 			</div>
@@ -92,4 +161,19 @@ class Login extends Component {
   }
 }
 
-export default withRouter(Login);
+export default withRouter(
+	connect((state) => {
+		//获取到仓库的state
+		return state
+	},(dispatch) => {
+		//用dispatch触发仓库中的action
+		return {
+			chuancans(){
+				dispatch({
+					type:"chuancans",
+					jemian:true
+				})
+			}
+		}
+	})(Login)
+);

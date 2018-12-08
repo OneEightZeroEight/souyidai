@@ -11,7 +11,6 @@ class Chacha extends Component {
 	}
 	fangfa(){
 		this.props.history.push('/home')
-		console.log(666)
 	}
   render() {
 		return (

@@ -9,10 +9,14 @@ class Xbottom extends React.Component{
         this.props = props;  
     }
     toubiaoBtn(e){
-        if(!this.props.phone){
+    
+        if(!localStorage.getItem('phone')){
             e.preventDefault();
             this.props.opentc();
             document.body.style.overflow='hidden';        
+        }else{
+           this.props.historys.push('/mine');
+        
         }
     }
     render(){

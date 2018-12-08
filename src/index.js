@@ -16,13 +16,15 @@ import {Provider} from 'react-redux'
 
 import App from './App';
 import * as serviceWorker from './lib/serviceWorker';
-
+let navs = localStorage.getItem("nav")
+console.log(navs)
 const store = createStore((state = {
    listNavIndex : 0,
    xq_init : {id:3382960343703,type:'ztb',title:'企业借款 XWPH18WLUL',amount:'890000'},
    tanchuangShow: false,
-   phone: false 
-
+   phone: false,
+	 nav: navs,
+	 jemian:false,
 
 }, action) => {
     switch (action.type) {
@@ -50,6 +52,21 @@ const store = createStore((state = {
 					phone:action.phone
                     }
                     
+				case 'chuancan':
+						return {
+								...state,
+								phone:action.phone
+						}
+				case 'chuancans':
+						return {
+								...state,
+								jemian:action.jemian
+						}
+				case 'navigateTos':
+						return {
+								...state,
+								nav:action.nav
+						}
         default:
             return state
     }

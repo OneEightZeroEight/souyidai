@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import {connect} from 'react-redux';
 class Dibu extends Component {
 	constructor(props){
 		super(props)
 		this.props = props;
 		this.state = {
-			nav:0,
 			navn:[{
 				title:"首页",
 				href:"/home",
@@ -26,9 +26,7 @@ class Dibu extends Component {
 	}
 	
 	navigateTo(index,e){
-		this.setState({
-			nav:index
-		})
+		this.props.navigateTos(index);
 	}
   render() {
     return (
@@ -43,7 +41,7 @@ class Dibu extends Component {
 												<li
 												onClick={this.navigateTo.bind(this,index)}
 												className={item.classna}
-												className={index === this.state.nav?"active":""}>
+												className={index == this.props.nav?"active":""}>
 													<i className={item.tubiao}></i>
 													<span>{item.title}</span>
 												</li>
@@ -59,4 +57,19 @@ class Dibu extends Component {
   }
 }
 
-export default Dibu;
+export default connect((state) => {
+		//获取到仓库的state
+		return state
+	},(dispatch) => {
+		//用dispatch触发仓库中的action
+		return {
+			navigateTos(index){
+				localStorage.setItem("nav",index)
+				dispatch({
+					type:"navigateTos",
+					nav:index
+				})
+			}
+		}
+	})(Dibu)
+
