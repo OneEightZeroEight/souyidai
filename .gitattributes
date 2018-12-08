@@ -1,4 +1,4 @@
-*.js linguist-language=javascript 
-*.css linguist-language=javascript 
-*.html linguist-language=javascript 
-*.java linguist-language=javascript 
+*.js linguist-language=react
+*.css linguist-language=react
+*.html linguist-language=react
+*.java linguist-language=react
