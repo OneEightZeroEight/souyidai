@@ -11,6 +11,9 @@ class Xtanchuang extends React.Component{
         this.props.closetc();
         document.body.style.overflow='';   
     }
+    gologin(){
+        this.props.historys.push('/mine')
+    }
     render(){
         return (
             <div data-v-3259d40b="" className="confirm-mask" style={{display:this.props.tanchuangShow?'block':'none'}}>
@@ -19,7 +22,7 @@ class Xtanchuang extends React.Component{
                     <p className="welcome">欢迎 , 请你先登录</p>
                     <div className='tcbtnbox'>
                         <p onClick={this.cancel.bind(this)}>取消</p>
-                        <p>登录</p>
+                        <p onClick={this.gologin.bind(this)}>登录</p>
                     </div>
                 
                 </div>

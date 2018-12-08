@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'antd/dist/antd.css'; 	
+import 'antd/dist/antd.css'; 
+import 'antd-mobile/dist/antd-mobile.css';	
 import { HashRouter as Router} from "react-router-dom";
 
 import './styles/index.css';
@@ -20,7 +21,8 @@ const store = createStore((state = {
    listNavIndex : 0,
    xq_init : {id:3382960343703,type:'ztb',title:'企业借款 XWPH18WLUL',amount:'890000'},
    tanchuangShow: false,
-   phone: false
+   phone: false 
+
 
 }, action) => {
     switch (action.type) {
@@ -46,7 +48,8 @@ const store = createStore((state = {
 			return {
 					...state,
 					phone:action.phone
-					}
+                    }
+                    
         default:
             return state
     }

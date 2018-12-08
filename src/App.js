@@ -5,6 +5,7 @@ import Mine from './pages/mine/Mine.jsx';
 import Project from './pages/project/Project.jsx';
 import Detail from './pages/detail/Xdetail.jsx';
 import Calc from './pages/calc/Xcalc.jsx';
+import Mycapital from './pages/mypage/Xmycapital.jsx';
 
 import Zhuce from './components/zhuce/Zhuce.jsx';
 import Info from './components/zhuce/Info.jsx';
@@ -21,6 +22,7 @@ class App extends Component {
 					<Route path="/calc" component={Calc} />
 					<Route path="/zhuce/" component={Zhuce} />
 					<Route path="/info/" component={Info} />
+					<Route path="/mycapital/" component={Mycapital} />
 					<Redirect from='/' to='/home' />
 				</Switch>		
       </div>

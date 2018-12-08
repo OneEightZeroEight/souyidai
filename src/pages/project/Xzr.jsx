@@ -2,6 +2,7 @@ import React from 'react'
 import Axios from 'axios'
 import { Progress } from 'antd';
 import {connect} from 'react-redux'
+import { Toast } from 'antd-mobile';
 var querystring = require('querystring');
 
 class Xzr extends React.Component {
@@ -23,6 +24,7 @@ class Xzr extends React.Component {
         
     }
     getListInfo(){
+        Toast.loading('Loading...', 0,true);
         Axios.post('https://m.souyidai.com/wap/1.6/bid/hulilist', querystring.stringify({huliProductType:'P2P',
         subIndex: 'zrb',
         pageNo: 1,
@@ -32,7 +34,7 @@ class Xzr extends React.Component {
             this.setState({
                 arr : res.data.data 
              
-            })
+            },()=>{Toast.hide()})
 
         }).catch((err)=>{
           console.log(err);

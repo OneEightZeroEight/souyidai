@@ -3,7 +3,7 @@ import Axios from 'axios'
 import { Progress } from 'antd';
 import {connect} from 'react-redux'
 import Xtanchuang from './Xtanchuang.jsx'
-
+import { Toast } from 'antd-mobile';
 class Xxiangqing extends React.Component{
     constructor(props){
         super(props);
@@ -44,6 +44,7 @@ class Xxiangqing extends React.Component{
     }
         
     getDetailInfo(){
+        Toast.loading('Loading...', 0,true);
         Axios.get(`https://m.souyidai.com/1.1/bid/detail/${this.props.xq_init.id}/${this.props.xq_init.type}?from=wap`)
         .then((res)=>{
             console.log(res.data.data);
@@ -57,8 +58,10 @@ class Xxiangqing extends React.Component{
             this.setState({
                 detailObj : res.data.data,
                 time:parseInt(time/1000)
+            },()=>{
+                Toast.hide();
+                this.daojishi(this.state.time)
             })
-            this.daojishi(this.state.time)
         }).catch((err)=>{
             console.log(err);
         })
@@ -278,7 +281,7 @@ class Xxiangqing extends React.Component{
             </div>
                     
 
-            <Xtanchuang></Xtanchuang>        
+            <Xtanchuang historys={this.props.history}></Xtanchuang>        
         
         </div>
             

@@ -2,6 +2,10 @@ import React from 'react'
 import Axios from 'axios'
 import { Progress } from 'antd';
 import {connect} from 'react-redux'
+
+import { Toast } from 'antd-mobile';
+
+
 var querystring = require('querystring');
 
 
@@ -28,6 +32,7 @@ class Xzt extends React.Component {
         //两种解决本办法axios.post+qs模块解析(直接得到) 或者 服务器request.post去拿返回(间接得到) 要设置跨域
     //    ' http://localhost:3003/list/getzt'
         // Axios.get('http://localhost:3003/list/getzt')
+        Toast.loading('Loading...', 0,true);
         Axios.post('https://m.souyidai.com/wap/1.6/bid/hulilist', querystring.stringify({huliProductType:'P2P',
         subIndex: 'ztb',
         pageNo: 1,
@@ -37,7 +42,7 @@ class Xzt extends React.Component {
             this.setState({
                 arr : res.data.data 
              
-            })
+            },()=>{Toast.hide()});
 
         }).catch((err)=>{
           console.log(err);

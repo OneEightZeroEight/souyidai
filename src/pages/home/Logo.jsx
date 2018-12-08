@@ -10,9 +10,9 @@ class Logo extends Component {
 		}
 	}
 	
-  componentDidMount(){
-    window.addEventListener('scroll', this.handleScroll.bind(this));	
-  }
+	componentWillUnmount(){
+		window.removeEventListener('scroll', this.handleScroll.bind(this));
+	}
     
   handleScroll(){
 		if(window.scrollY>=100){
