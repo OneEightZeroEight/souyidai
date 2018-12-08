@@ -43,6 +43,7 @@ class Logo extends Component {
 	//删除退出账号
 	shanchu(){
 		localStorage.removeItem('phone');
+		this.props.history.push('/home');
 		this.setState({
 			tuichu:false
 		})

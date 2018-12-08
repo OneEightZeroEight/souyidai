@@ -53,8 +53,8 @@ class Login extends Component {
 				return;
 			}
 			if(this.state.chuans == '0'){
-				this.props.chuancans();
 				localStorage.setItem("phone",zhanghao);
+				this.props.chuancans();
 				this.props.history.push('/home')
 				console.log(666)
 			}
