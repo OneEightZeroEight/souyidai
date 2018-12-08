@@ -16,7 +16,8 @@ import * as serviceWorker from './lib/serviceWorker';
 
 const store = createStore((state = {
    listNavIndex : 0,
-	 phone:''
+	 phone:'',
+	 jemian:false
 
 }, action) => {
     switch (action.type) {
@@ -35,6 +36,11 @@ const store = createStore((state = {
 								...state,
 								phone:action.phone
 						}
+				case 'chuancans':
+						return {
+								...state,
+								jemian:action.jemian
+						}		
         default:
             return state
     }
