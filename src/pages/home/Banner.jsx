@@ -10,10 +10,10 @@ class Banner extends Component {
     return (
 		<div className="huli-regist-banner">
 			<Carousel autoplay>
-				<div ><img src={a} width="320"/></div>
-				<div ><img src={b} width="320"/></div>
-				<div ><img src={c} width="320"/></div>
-				<div ><img src={d} width="320"/></div>
+				<div ><img src={a} width="100%"/></div>
+				<div ><img src={b} width="100%"/></div>
+				<div ><img src={c} width="100%"/></div>
+				<div ><img src={d} width="100%"/></div>
 			</Carousel>
 		</div>
     );
